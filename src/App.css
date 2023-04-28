@@ -1,0 +1,76 @@
+.logoFont {
+  background: rgb(253,29,29);
+  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed;
+  top: 0; */
+}
+
+.logo {
+  padding-left: 20px;
+  color: white;
+}
+
+.font {
+  padding-right: 30px;
+  font-size: 2rem;
+}
+
+.nav-elem {
+  background: rgb(253,29,29);
+  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-left: 35%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li .link {
+  color: white;
+  font-size: 4rem;
+  text-decoration: none;  
+}
+
+li .link::before {
+  content: '\2192';
+  font-size: 4rem;
+  display: none;
+}
+
+li .link:hover::before {
+  display: inline-block;
+}
+
+/*Styling the home component*/
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgb(253,29,29);
+  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  z-index: 5;
+
+}
+
+.backtotop {
+  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  z-index: 5;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  bottom: 2rem;
+  z-index: 1;
+}
+
