@@ -36,12 +36,19 @@ li .link {
   color: white;
   font-size: 4rem;
   text-decoration: none;  
+  transition: color 2s;
+}
+
+li .link:hover {
+  font-size: 5rem;
+  color: yellow;
 }
 
 li .link::before {
   content: '\2192';
   font-size: 4rem;
   display: none;
+  margin-right: 2rem;
 }
 
 li .link:hover::before {
