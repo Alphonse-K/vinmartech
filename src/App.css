@@ -1,26 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Iso&display=swap');
+
 .logoFont {
-  background: rgb(253,29,29);
-  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  display: flex;
+  background-color: rgb(217, 4, 41);
+  display: flex;
   flex-direction: row;
+  background-color: 'D90429';
   justify-content: space-between;
   align-items: center;
-  /* position: fixed;
-  top: 0; */
+}
+
+.logoFont .logoLink {
+  text-decoration: none;
 }
 
 .logo {
   padding-left: 20px;
   color: white;
+  font-family: 'Rubik Iso', cursive;
 }
 
 .font {
   padding-right: 30px;
   font-size: 2rem;
+  color: white;
 }
 
 .nav-elem {
-  background: rgb(253,29,29);
-  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  justify-content: center;
+  background-color: rgb(217, 4, 41);
   align-items: center;
   position: absolute;
   height: 100%;
@@ -36,12 +43,12 @@ li .link {
   color: white;
   font-size: 4rem;
   text-decoration: none;  
-  transition: color 2s;
+  transition: letter-spacing 1s;
 }
 
 li .link:hover {
-  font-size: 5rem;
-  color: yellow;
+  letter-spacing: 1rem;
+  color:rgb(1, 0, 15);
 }
 
 li .link::before {
@@ -53,18 +60,18 @@ li .link::before {
 
 li .link:hover::before {
   display: inline-block;
+  color: yellow;
 }
 
-/*Styling the home component*/
+/*Styling the navbar component*/
 .navbar {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   display: block;
-  background: rgb(253,29,29);
-  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  z-index: 5;
-
+  background-color: rgb(217, 4, 41);
+  z-index: 10;
 }
 
 .backtotop {
@@ -81,3 +88,40 @@ li .link:hover::before {
   z-index: 1;
 }
 
+/*End of navbar component*/
+
+/****************************Styling the home component***************************************/
+.home1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.home1 .homeParagh {
+  font-size: 2rem;
+  margin-right: 2em;
+  text-align: justify;
+  text-shadow: 1rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  padding: 40px;
+}
+.homeImage1 {
+  border-radius: 72% 28% 30% 70% / 61% 45% 55% 39%;
+  width: 50%;
+  height: 40%;
+}
+
+.image1Content {
+  background-color: rgb(11, 9, 10);
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  padding-left: 2em;
+  box-shadow: -20px 20px 80px rgb(217, 4, 41);
+}
+
+.home2 {
+  background-color: radial-gradient(circle, #d90429, #c0041e, #a70315, #8f020b, #780000);
+}
