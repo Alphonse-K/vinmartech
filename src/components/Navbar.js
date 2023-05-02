@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 
@@ -24,32 +24,17 @@ export default function Navbar() {
             clickable2.style.display='none';
         }
     }
-
-    // const handleArrow = () => {
-    //     var onHover1 = document.getElementById('arrowRight1');
-    //     var onHover2= document.getElementById('arrowRight2');
-    //     var onHover3= document.getElementById('arrowRight3');
-    //     if( onHover1.style.display==='none' || onHover2.style.display==='none' || onHover3.style.display==='none') {
-    //        onHover1.style.display='inline';
-    //        onHover2.style.display='inline';
-    //        onHover3.style.display='inline';
-    //     } else {
-    //        onHover1.style.display='none';
-    //        onHover2.style.display='none';
-    //        onHover3.style.display='none';
-    //     }
-    // }
     
   return (
     // <div></div>
     <div className='navbar-plus'>
         <div className="logoFont" id='fabars' >
-            <Link to="/"><h1 className="logo">Vinmartech-Sarlu</h1></Link>
+            <Link to="/" className='logoLink'><h1 className="logo">Vinmartech-Sarlu</h1></Link>
             <div className="font" onClick={handleClick1}><FontAwesomeIcon icon={faBars}/></div>
         </div>  
             <div className='navbar' id='navpage'>
                 <div className="logoFont">
-                    <Link to="/"><h1 className="logo">Vinmartech-Sarlu</h1></Link>
+                    <Link to="/" className='logoLink'><h1 className="logo">Vinmartech-Sarlu</h1></Link>
                     <div className="font" onClick={handleClick1}><FontAwesomeIcon icon={faXmark} /></div>
                 </div>
                 <div className="nav-elem">

@@ -1,11 +1,49 @@
 import React from 'react';
+
 import Navbar from './Navbar';
 import BackToTop from './BackToTop';
 
+import image1 from '../img/guilherme-stecanella-UrS5HkBr1Rc-unsplash.jpg';
+import CCarousel from "@coreui/coreui";
 export default function Home() {
   return (
+    // <div></div>
     <div>
       <Navbar />
+      <CCarousel controls indicators dark>
+  <CCarouselItem>
+    <CImage className="d-block w-100" src={ReactImg} alt="slide 1" />
+    <CCarouselCaption className="d-none d-md-block">
+      <h5>First slide label</h5>
+      <p>Some representative placeholder content for the first slide.</p>
+    </CCarouselCaption>
+  </CCarouselItem>
+  <CCarouselItem>
+    <CImage className="d-block w-100" src={VueImg} alt="slide 2" />
+    <CCarouselCaption className="d-none d-md-block">
+      <h5>Second slide label</h5>
+      <p>Some representative placeholder content for the first slide.</p>
+    </CCarouselCaption>
+  </CCarouselItem>
+  <CCarouselItem>
+    <CImage className="d-block w-100" src={AngularImg} alt="slide 3" />
+    <CCarouselCaption className="d-none d-md-block">
+      <h5>Third slide label</h5>
+      <p>Some representative placeholder content for the first slide.</p>
+    </CCarouselCaption>
+  </CCarouselItem>
+</CCarousel>
+      <div className='home1'>
+        <div className='image1Content'>
+          <img src={image1} alt="Amazed Woman" className='homeImage1'/>
+        </div>
+        <div className='homeParagh'>
+          <p>Mollit magna eu pariatur exercitation tempor Lorem in. Non consequat aliquip mollit nostrud minim sunt eu nulla nulla laborum aliquip. Et cillum consectetur labore nostrud est anim qui enim amet sit nulla minim ad elit.</p>
+        </div>
+      </div>
+      <div className='hom2'>
+        <h1></h1>
+      </div>
       <BackToTop />
       <h1>Home</h1>
       <h1>Home</h1>
