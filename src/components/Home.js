@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
+
 import Carousel from 'react-bootstrap/Carousel';
 import { Slide, Zoom, Flip, Roll } from "react-awesome-reveal";
 
-
-import image1 from '../img/guilherme-stecanella-UrS5HkBr1Rc-unsplash.jpg';
+import Carousel from 'react-bootstrap/Carousel';
 import Navbar from './Navbar';
 import BackToTop from './BackToTop';
+
+import image1 from '../img/guilherme-stecanella-UrS5HkBr1Rc-unsplash.jpg';
 
 export default function Home() {
 
@@ -40,6 +42,7 @@ export default function Home() {
   }
 
   return (
+    // <div></div>
     <div>
       <Navbar />
       <Carousel activeIndex={index} onSelect={handleSelect}>

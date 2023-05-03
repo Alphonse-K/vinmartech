@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 
@@ -29,12 +29,12 @@ export default function Navbar() {
     // <div></div>
     <div className='navbar-plus'>
         <div className="logoFont" id='fabars' >
-            <Link to="/"><h1 className="logo">Vinmartech-Sarlu</h1></Link>
+            <Link to="/" className='logoLink'><h1 className="logo">Vinmartech-Sarlu</h1></Link>
             <div className="font" onClick={handleClick1}><FontAwesomeIcon icon={faBars}/></div>
         </div>  
             <div className='navbar' id='navpage'>
                 <div className="logoFont">
-                    <Link to="/"><h1 className="logo">Vinmartech-Sarlu</h1></Link>
+                    <Link to="/" className='logoLink'><h1 className="logo">Vinmartech-Sarlu</h1></Link>
                     <div className="font" onClick={handleClick1}><FontAwesomeIcon icon={faXmark} /></div>
                 </div>
                 <div className="nav-elem">
