@@ -52,7 +52,7 @@ export default function Home() {
                 alt="images"
               />
               <Carousel.Caption key={i} className='d-flex flex-column justify-content-center h-100'>
-                <Flip >
+                <Flip>
                   <h2 className='captionh2'>{slide.caption}</h2>
                 </Flip>
                 <Slide direction='right'>            
