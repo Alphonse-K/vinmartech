@@ -1,48 +1,71 @@
-import React from 'react';
+import React, {useState} from 'react';
 
+import Carousel from 'react-bootstrap/Carousel';
 import Navbar from './Navbar';
 import BackToTop from './BackToTop';
 
 import image1 from '../img/guilherme-stecanella-UrS5HkBr1Rc-unsplash.jpg';
-import CCarousel from "@coreui/coreui";
+
 export default function Home() {
+
+  const [index, setIndex] = useState(0);
+
+  const data = [
+    {
+     image: require('../img/pexels-ono-kosuki-5647594.jpg'), 
+     caption:"Application mobile Android et/ou IOS sur Mesure.",
+     description:"Maintenez le contact auprès de vos clients via des Applications mobiles diverses."
+    },
+    {
+      image:require('../img/pexels-marta-branco-1194713.jpg'), 
+      caption:"Site Internet sur Mesure",
+      description:"Optez pour un site internet dynamique et responsif."
+     },
+     {
+      image:require('../img/pexels-pixabay-159304.jpg'), 
+      caption:"Réseau Informatique",
+      description:"Nous concevons et déployons un réseau informatique adapté à vos besoins.",
+     },
+     {
+      image:require('../img/pexels-pixabay-38544.jpg'), 
+      caption:"La conception de programmes informatiques variés",
+      description:"Nous serons à vos côtés pour la conception, le développement, le déploiement et la maintenance de programmes informatiques variés.",
+      
+     },
+  ]
+
+  const handleSelect = (selectIndex, e) => {
+      setIndex(selectIndex);
+  }
+
   return (
     // <div></div>
     <div>
       <Navbar />
-      <CCarousel controls indicators dark>
-  <CCarouselItem>
-    <CImage className="d-block w-100" src={ReactImg} alt="slide 1" />
-    <CCarouselCaption className="d-none d-md-block">
-      <h5>First slide label</h5>
-      <p>Some representative placeholder content for the first slide.</p>
-    </CCarouselCaption>
-  </CCarouselItem>
-  <CCarouselItem>
-    <CImage className="d-block w-100" src={VueImg} alt="slide 2" />
-    <CCarouselCaption className="d-none d-md-block">
-      <h5>Second slide label</h5>
-      <p>Some representative placeholder content for the first slide.</p>
-    </CCarouselCaption>
-  </CCarouselItem>
-  <CCarouselItem>
-    <CImage className="d-block w-100" src={AngularImg} alt="slide 3" />
-    <CCarouselCaption className="d-none d-md-block">
-      <h5>Third slide label</h5>
-      <p>Some representative placeholder content for the first slide.</p>
-    </CCarouselCaption>
-  </CCarouselItem>
-</CCarousel>
-      <div className='home1'>
-        <div className='image1Content'>
+      <Carousel activeIndex={index} onSelect={handleSelect}>
+        {data.map((slide, i) => {
+          return (
+            <Carousel.Item key={i}>        
+              <img
+                className="d-block w-100 h-100"
+                src={slide.image}
+                alt="images"
+              />
+              <Carousel.Caption key={i} className='d-flex flex-column justify-content-center h-100'>
+                <h2>{slide.caption}</h2>
+                <p>{slide.description}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          )
+        })}   
+      </Carousel>
+      <div className='home1 d-flex align-items-center justify-content-center'>
+        <div className='image1Content col-sx-12'>
           <img src={image1} alt="Amazed Woman" className='homeImage1'/>
         </div>
-        <div className='homeParagh'>
+        <div className='homeParagh col-sx-12'>
           <p>Mollit magna eu pariatur exercitation tempor Lorem in. Non consequat aliquip mollit nostrud minim sunt eu nulla nulla laborum aliquip. Et cillum consectetur labore nostrud est anim qui enim amet sit nulla minim ad elit.</p>
         </div>
-      </div>
-      <div className='hom2'>
-        <h1></h1>
       </div>
       <BackToTop />
       <h1>Home</h1>
