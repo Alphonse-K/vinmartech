@@ -1,63 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Iso&display=swap');
+
 .logoFont {
-  background: rgb(253,29,29);
-  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  display: flex;
+  background-color: rgb(217, 4, 41);
+  display: flex;
   flex-direction: row;
+  background-color: 'D90429';
   justify-content: space-between;
   align-items: center;
-  /* position: fixed;
-  top: 0; */
+}
+
+.logoFont .logoLink {
+  text-decoration: none;
 }
 
 .logo {
   padding-left: 20px;
   color: white;
+  font-family: 'Rubik Iso', cursive;
 }
 
 .font {
   padding-right: 30px;
   font-size: 2rem;
+  color: white;
 }
 
 .nav-elem {
-  background: rgb(253,29,29);
-  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  justify-content: center;
-  align-items: center;
+  background-color: rgb(217, 4, 41);
+  /* align-items: center; */
   position: absolute;
   height: 100%;
   width: 100%;
   padding-left: 35%;
+  margin-top: 30px;
 }
 
 ul {
   list-style-type: none;
 }
 
-li .link {
+ul li .link {
   color: white;
   font-size: 4rem;
   text-decoration: none;  
+  transition: letter-spacing 1s;
 }
 
-li .link::before {
+ul li .link:hover {
+  letter-spacing: 1rem;
+  color:rgb(1, 0, 15);
+}
+
+ul li .link::before {
   content: '\2192';
   font-size: 4rem;
   display: none;
+  margin-right: 2rem;
 }
 
-li .link:hover::before {
+ul li .link:hover::before {
   display: inline-block;
+  color: yellow;
 }
 
-/*Styling the home component*/
+/*Styling the navbar component*/
 .navbar {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   display: block;
-  background: rgb(253,29,29);
-  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  z-index: 5;
-
+  background-color: rgb(217, 4, 41);
+  z-index: 10;
 }
 
 .backtotop {
@@ -74,3 +89,106 @@ li .link:hover::before {
   z-index: 1;
 }
 
+/*End of navbar component*/
+
+/****************************Styling the home component***************************************/
+.home1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.home1 .homeParagh {
+  font-size: 2rem;
+  margin-right: 2em;
+  text-align: justify;
+  text-shadow: 1rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  padding: 40px;
+}
+
+.homeImage1 {
+  border-radius: 72% 28% 30% 70% / 61% 45% 55% 39%;
+  width: 50%;
+  height: 40%;
+}
+
+.image1Content {
+  background-color: rgb(11, 9, 10);
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  padding-left: 2em;
+  box-shadow: -10px -10px 40px rgb(217, 4, 41);
+}
+
+.home2 {
+  background-color: radial-gradient(circle, #d90429, #c0041e, #a70315, #8f020b, #780000);
+}
+
+.captionh2 {
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  font-weight: 700;
+}
+
+.captionp {
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .captionh2 {
+    font-size: 1rem;
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+  }
+  
+  .captionp {
+    font-size: 1rem;
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+  }
+  .home1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home1 .homeParagh {
+    font-size: 1.5rem;
+    margin: 1em;
+    font-weight: 600;
+    text-align:justify;
+    text-shadow: 1rem;
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .font {
+    padding-right: 10px;
+  }
+
+  ul li .link {
+    font-size: 1.2rem;  
+    transition: letter-spacing 0.5s;
+    font-weight: 500;
+  }
+
+  ul li .link:hover::before {
+    margin-right: 0.5rem;
+    font-size:smaller;
+  }
+
+  .nav-elem {
+    padding-left: 25px;
+  }
+
+  nav ul {
+    margin-top: 50px;
+  }
+}
