@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { Slide, Zoom, Flip, Roll } from "react-awesome-reveal";
+
 
 import image1 from '../img/guilherme-stecanella-UrS5HkBr1Rc-unsplash.jpg';
 import Navbar from './Navbar';
@@ -50,20 +52,28 @@ export default function Home() {
                 alt="images"
               />
               <Carousel.Caption key={i} className='d-flex flex-column justify-content-center h-100'>
-                <h2>{slide.caption}</h2>
-                <p>{slide.description}</p>
+                <Flip >
+                  <h2 className='captionh2'>{slide.caption}</h2>
+                </Flip>
+                <Slide direction='right'>            
+                  <p className='captionp'>{slide.description}</p>
+                </Slide>
               </Carousel.Caption>
             </Carousel.Item>
           )
         })}   
       </Carousel>
       <div className='home1 d-flex align-items-center justify-content-center'>
-        <div className='image1Content col-sx-12'>
-          <img src={image1} alt="Amazed Woman" className='homeImage1'/>
-        </div>
-        <div className='homeParagh col-sx-12'>
-          <p>Mollit magna eu pariatur exercitation tempor Lorem in. Non consequat aliquip mollit nostrud minim sunt eu nulla nulla laborum aliquip. Et cillum consectetur labore nostrud est anim qui enim amet sit nulla minim ad elit.</p>
-        </div>
+        <Roll direction='left'>               
+          <div className='image1Content col-sx-12'>
+            <img src={image1} alt="Amazed Woman" className='homeImage1'/>
+          </div>
+        </Roll>
+        <Zoom>
+          <div className='homeParagh col-sx-12'>
+            <p>Mollit magna eu pariatur exercitation tempor Lorem in. Non consequat aliquip mollit nostrud minim sunt eu nulla nulla laborum aliquip. Et cillum consectetur labore nostrud est anim qui enim amet sit nulla minim ad elit.</p>
+          </div>
+        </Zoom>
       </div>
       <BackToTop />
       <h1>Home</h1>
