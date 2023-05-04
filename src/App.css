@@ -91,7 +91,7 @@ ul li .link:hover::before {
 
 /*End of navbar component*/
 
-/****************************Styling the home component***************************************/
+/**************************** HOME COMPONENT START ***************************************/
 .home1 {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -141,9 +141,10 @@ ul li .link:hover::before {
 
 @media only screen and (max-width: 768px) {
   .captionh2 {
+    margin-top: 1rem;
     font-size: 1rem;
     font-family: 'Pacifico', cursive;
-    font-weight: 600;
+    font-weight: 700;
   }
   
   .captionp {
@@ -167,6 +168,7 @@ ul li .link:hover::before {
 
   .logo {
     font-size: 1.5rem;
+    padding-left: 10px;
   }
 
   .font {
@@ -192,3 +194,8 @@ ul li .link:hover::before {
     margin-top: 50px;
   }
 }
+/**************************** HOME COMPONENT END ***************************************/
+
+/*********************** FOOTER START ***************************/
+
+/*********************** FOOTER END ***************************/
