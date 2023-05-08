@@ -3,9 +3,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import { Slide, Zoom, Flip, Roll } from "react-awesome-reveal";
 
 
-import image1 from '../img/guilherme-stecanella-UrS5HkBr1Rc-unsplash.jpg';
+import image1 from '../img/Allura - Love is in the Air.png';
 import Navbar from './Navbar';
 import BackToTop from './BackToTop';
+import Footer from './Footer';
 
 export default function Home() {
 
@@ -66,7 +67,7 @@ export default function Home() {
       <div className='home1 d-flex align-items-center justify-content-center'>
         <Roll direction='left'>               
           <div className='image1Content col-sx-12'>
-            <img src={image1} alt="Amazed Woman" className='homeImage1'/>
+            <img src={image1} alt="Two talking ladies" className='homeImage1'/>
           </div>
         </Roll>
         <Zoom>
@@ -75,7 +76,6 @@ export default function Home() {
           </div>
         </Zoom>
       </div>
-      <BackToTop />
       <h1>Home</h1>
       <h1>Home</h1>
       <h1>Home</h1>
@@ -92,7 +92,8 @@ Excepteur occaecat commodo sint amet. Consequat in ex do consequat duis dolore. 
 Dolor ullamco duis duis laborum adipisicing cillum consectetur anim reprehenderit eiusmod. Veniam do incididunt enim eu nisi culpa sint sint deserunt. Culpa ex velit sit elit.
 
 Anim ad dolor cupidatat commodo officia aliqua amet dolore deserunt amet incididunt pariatur eiusmod proident. Eu adipisicing aute in irure dolore aliqua velit qui. Ad proident cillum enim culpa. Dolore esse exercitation enim voluptate. Anim proident ullamco proident aliqua id quis quis voluptate mollit minim.</h1>
-      
+    <BackToTop />
+    <Footer />
     </div>
   )
 }

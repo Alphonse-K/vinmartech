@@ -7,6 +7,7 @@ import { Slide } from 'react-awesome-reveal';
 
 
 
+
 export default function Navbar() {
     useEffect(() => {
         handleClick1();
@@ -39,21 +40,24 @@ export default function Navbar() {
                 <div className="font" onClick={handleClick1}><FontAwesomeIcon icon={faXmark} /></div>
             </div>
             <div className="nav-elem">
-                    <nav>
-                        <ul>
-                        <Slide cascade>
-                            <li>
-                            <Link to="/" className='link'>Accueil</Link>
-                            </li>
-                            <li>
-                            <Link to="/about" className='link'>À propos</Link>
-                            </li>
-                            <li>
-                            <Link to="/contact" className='link'>Contact</Link>
-                            </li>
-                        </Slide>
-                        </ul>
-                    </nav>
+                <nav>
+                    <ul>
+                    <Slide cascade>
+                        <li>
+                        <Link to="/" className='link'>Accueil</Link>
+                        </li>
+                        <li>
+                        <Link to="/about" className='link'>À propos</Link>
+                        </li>
+                        <li>
+                        <Link to="/contact" className='link'>Expertises</Link>
+                        </li>
+                        <li>
+                        <Link to="/contact" className='link'>Contact</Link>
+                        </li>
+                    </Slide>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>

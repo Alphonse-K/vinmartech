@@ -76,7 +76,8 @@ ul li .link:hover::before {
 }
 
 .backtotop {
-  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);  z-index: 5;
+  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);
+  z-index: 5;
   border-radius: 50%;
   cursor: pointer;
   height: 1.5rem;
@@ -109,18 +110,14 @@ ul li .link:hover::before {
 }
 
 .homeImage1 {
+  background-color: rgb(253, 5, 5);
   border-radius: 72% 28% 30% 70% / 61% 45% 55% 39%;
-  width: 50%;
-  height: 40%;
+  width: 40vw;
 }
 
 .image1Content {
-  background-color: rgb(11, 9, 10);
   display: flex;
   justify-content: center;
-  border-radius: 50%;
-  padding-left: 2em;
-  box-shadow: -10px -10px 40px rgb(217, 4, 41);
 }
 
 .home2 {
@@ -198,4 +195,115 @@ ul li .link:hover::before {
 
 /*********************** FOOTER START ***************************/
 
+.footerParent {
+  background-color:  rgb(217, 4, 41);
+  color: white;
+  height: 70%;
+  font-family: 'Pacifico', cursive;
+  margin-top: -5px;
+  padding-top: 30px;
+}
+
+.footerParent .logoLink {
+  text-decoration: none;
+  color: white;
+}
+.footerParent .logoLinkFooter {
+  text-decoration: none;
+  color: white;
+}
+
+.footerParent .logoLinkFooter:hover {
+  color: rgb(10, 10, 10);
+  letter-spacing: 0.1rem;
+}
+
+.footerText {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.footerParent small {
+  font-weight: 600;
+}
+
+.footer-service {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-contact {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-contact .logoLinkFooter {
+  text-align: center;
+}
+
+.footerIconInsta {
+  margin-top: 20px;
+}
+
+.footerIconFb {
+  margin-top: 20px;
+}
+
+.footerIconFb .iconFb {
+  margin-right: 1rem;
+  background: rgb(238, 238, 243);
+  height: 25px;
+}
+
+.footerIconInsta .iconInsta {
+  margin-right: 1rem;
+  background: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);
+  height: 30px;
+}
+
+@media (max-width:768px) {
+  .footerParent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-service {
+    margin-top: 25px;
+  }
+  
+  .footer-contact {
+    margin-top: 25px;
+  }
+
+}
+
+.error {
+  margin: 200px;
+  background: rgb(217, 4, 41);
+  font-weight: 900;
+  height: 60vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-family: 'Pacifico'
+}
+@media (max-width:600px) {
+  .errorContainer {
+    display: block;
+    flex-direction: row;
+  }
+ .errorContainer .error {
+    margin: 50px;
+    height: 40vh;
+    background-color: rgb(217, 4, 41);
+  }
+
+}
 /*********************** FOOTER END ***************************/
