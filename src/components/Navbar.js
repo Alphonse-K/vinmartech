@@ -50,7 +50,7 @@ export default function Navbar() {
                         <Link to="/about" className='link'>À propos</Link>
                         </li>
                         <li>
-                        <Link to="/contact" className='link'>Expertises</Link>
+                        <Link to="/expertises" className='link'>Expertises</Link>
                         </li>
                         <li>
                         <Link to="/contact" className='link'>Contact</Link>

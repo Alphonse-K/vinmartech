@@ -76,6 +76,15 @@ export default function Home() {
           </div>
         </Zoom>
       </div>
+      <div className='presentations'>
+        <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 '>
+          <h1>Pourquoi travailler avec Vinmartech ?</h1>
+          <p>Notre cabinet est spécialisé dans la conception de sites Web professionnels, d'application mobile Android et/ou IOS et de programmes informatiques divers. Nous sommes passionnés par des créations qui reflètent l’identité de nos clients et qui leur permettent de se démarquer de la concurrence.</p>
+          <p>Nous vous aidons à créer une présence en ligne efficace et mémorable. Nous offrons une gamme complète de services, notamment la conception personnalisée de sites Web, le développement d'applications informatiques variées, le SEO, l’hébergement, la maintenance et la sécurité.</p>
+          <button>Expertises</button>
+        </div>
+        <div className='d-flex justify-content-center col-xs-12 col-sm-12 col-md-6 col-lg-6 '><img src={image1} alt="Two talking ladies"/></div>
+      </div>
       <h1>Home</h1>
       <h1>Home</h1>
       <h1>Home</h1>
