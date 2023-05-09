@@ -1,12 +1,16 @@
 import React, {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { Slide, Zoom, Flip, Roll } from "react-awesome-reveal";
+import { Slide, Zoom, Flip, Roll, Bounce } from "react-awesome-reveal";
+import { Link } from 'react-router-dom';
 
 
 import image1 from '../img/Allura - Love is in the Air.png';
+import image2 from '../img/Meeting.png';
 import Navbar from './Navbar';
 import BackToTop from './BackToTop';
 import Footer from './Footer';
+import ServicesItem from './ServicesItem';
+// import ServicesItem from './ServicesItem';
 
 export default function Home() {
 
@@ -33,6 +37,11 @@ export default function Home() {
       caption:"La conception de programmes informatiques variés",
       description:"Nous serons à vos côtés pour la conception, le développement, le déploiement et la maintenance de programmes informatiques variés.",
       
+     },
+     {
+      image:require('../img/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg'), 
+      caption:"Caméra de Surveillance",
+      description:"Nous serons à vos côtés pour la conception, le développement, le déploiement et la maintenance de programmes informatiques variés.", 
      },
   ]
 
@@ -77,14 +86,31 @@ export default function Home() {
         </Zoom>
       </div>
       <div className='presentations'>
-        <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 '>
-          <h1>Pourquoi travailler avec Vinmartech ?</h1>
-          <p>Notre cabinet est spécialisé dans la conception de sites Web professionnels, d'application mobile Android et/ou IOS et de programmes informatiques divers. Nous sommes passionnés par des créations qui reflètent l’identité de nos clients et qui leur permettent de se démarquer de la concurrence.</p>
-          <p>Nous vous aidons à créer une présence en ligne efficace et mémorable. Nous offrons une gamme complète de services, notamment la conception personnalisée de sites Web, le développement d'applications informatiques variées, le SEO, l’hébergement, la maintenance et la sécurité.</p>
-          <button>Expertises</button>
-        </div>
-        <div className='d-flex justify-content-center col-xs-12 col-sm-12 col-md-6 col-lg-6 '><img src={image1} alt="Two talking ladies"/></div>
+          <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 '>
+            <h1>Pourquoi travailler avec Vinmartech ?</h1>
+            <p>Notre cabinet est spécialisé dans la conception de sites Web professionnels, d'application mobile Android et/ou IOS et de programmes informatiques divers. Nous sommes passionnés par des créations qui reflètent l’identité de nos clients et qui leur permettent de se démarquer de la concurrence.</p>
+            <p>Nous vous aidons à créer une présence en ligne efficace et mémorable. Nous offrons une gamme complète de services, notamment la conception personnalisée de sites Web, le développement d'applications informatiques variées, le SEO, l’hébergement, la maintenance et la sécurité.</p>
+            <Link to="/expertises" className='link'><button>Expertises</button></Link>
+          </div> 
+          <div className='d-flex justify-content-center col-xs-12 col-sm-12 col-md-6 col-lg-6 '>
+          <Bounce>
+            <img className='image2' src={image2} alt="Meeting"/>
+          </Bounce>
+          </div>
       </div>
+        <Zoom>
+        <div className='services-title'><h1>Nos Prestations</h1></div>
+        <div className='services'>
+          {data.map((item, i) => {
+            return (
+              <ServicesItem 
+                image={item.image} 
+                title={item.caption} 
+                description={item.description} 
+                key={i} 
+              />)})}           
+        </div>
+      </Zoom>
       <h1>Home</h1>
       <h1>Home</h1>
       <h1>Home</h1>
