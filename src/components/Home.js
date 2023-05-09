@@ -98,8 +98,8 @@ export default function Home() {
           </Bounce>
           </div>
       </div>
-        <Zoom>
         <div className='services-title'><h1>Nos Prestations</h1></div>
+        <Zoom>
         <div className='services'>
           {data.map((item, i) => {
             return (

@@ -285,8 +285,13 @@ ul li .link:hover::before {
   transform: translateY(0%)
 }
 
-.item h5 {
-  color: rgb(255, 255, 255)
+.service-description h3, p {
+  text-align: center;
+}
+
+.item .item-title {
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .services-title {
@@ -295,9 +300,6 @@ ul li .link:hover::before {
   text-align: center;
   margin-top: 50px;
   border-radius: 50px 20px;
-  width: 200px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 /**************************** HOME COMPONENT END ***************************************/

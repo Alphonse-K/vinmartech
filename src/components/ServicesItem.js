@@ -6,7 +6,7 @@ export default function ServicesItem(props) {
     <>
     <div className='item col-xs-12 col-sm-12 col-md-4 col-lg-3 ' style={{background:'red', margin: 20}}>
         <img className='service-img-container' src={props.image}  alt='' />
-        <div><h5>{props.title}</h5></div> 
+        <div className='item-title'><h5>{props.title}</h5></div> 
         <div className='service-description'>
             <h3>Take Away:</h3>
             <p>{props.description}</p>
