@@ -84,7 +84,7 @@ export default function Home() {
           return (
             <Carousel.Item key={i}>        
               <img
-                className="d-block w-100 h-100"
+                className="d-block w-100 h-100 "
                 src={slide.image}
                 alt="images"
               />
@@ -101,12 +101,12 @@ export default function Home() {
         })}   
       </Carousel>
       <div className='home1 d-flex align-items-center justify-content-center'>
-        <Roll direction='left'>               
+        <Roll direction='left' triggerOnce='true'>               
           <div className='image1Content col-sx-12'>
             <img src={image1} alt="Two talking ladies" className='homeImage1'/>
           </div>
         </Roll>
-        <Zoom>
+        <Zoom triggerOnce='true'>
           <div className='homeParagh col-sx-12'>
             <p>Mollit magna eu pariatur exercitation tempor Lorem in. Non consequat aliquip mollit nostrud minim sunt eu nulla nulla laborum aliquip. Et cillum consectetur labore nostrud est anim qui enim amet sit nulla minim ad elit.</p>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
       </div>
         <div className='services-title'><h1>Nos Prestations</h1></div>
-        <Zoom>
+        <Zoom triggerOnce='true'>
         <div className='services'>
           {data2.map((item, i) => {
             return (
@@ -141,6 +141,7 @@ export default function Home() {
           <Link to="/expertises" className='link'><button>Expertises</button></Link>           
         </div>
       </Zoom>
+      <div>Home</div>
       <h1>Home</h1>
       <h1>Home</h1>
       <h1>Home</h1>
