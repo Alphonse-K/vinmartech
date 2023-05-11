@@ -5,7 +5,7 @@ import BackToTop from './BackToTop';
 
 export default function Expertises() {
   return (
-    // <div>Expertises</div>
+    // <></>
     <div>
         <Navbar/>
         <div>Expertises</div>
