@@ -250,10 +250,16 @@ ul li .link:hover::before {
 
 .services .service-img-container {
   width: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .item {
   /* relative position in order to position de .service-description relative to it */
+  background-color: rgb(217, 4, 41);
+  margin: 20px;
   position: relative;
   box-shadow: -9px -6px 12px 0px rgba(0,0,0,0.22),
               0px 15px 12px 0px rgba(0,0,0,0.22),
@@ -261,6 +267,7 @@ ul li .link:hover::before {
               0px 15px 12px 0px rgba(0,0,0,0.22),
               0px 15px 12px 0px rgba(0,0,0,0.22),
               0px 15px 12px 0px rgba(0,0,0,0.22);
+  border-radius: 25px;
 }
 
 .item .service-description {
@@ -271,10 +278,10 @@ ul li .link:hover::before {
   left: 0;
   right: 0;
   padding: 10px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 4px;
-  border-color: rgb(217, 4, 41);
+  border-style: none;
+  border-radius: 10px;
+  /* border-width: 4px;
+  border-color: linear-gradient(218deg, rgba(253,29,29,1) 47%, rgba(252,176,69,1) 81%, rgba(131,58,180,1) 100%);; */
   visibility: hidden;
   transition: transform 0.4s ease-in-out;
   transform: translateY(100%);
@@ -295,13 +302,41 @@ ul li .link:hover::before {
 }
 
 .services-title {
-  background-color: aqua;
-  font-family: 'Pacifico', cursive;
   text-align: center;
   margin-top: 50px;
-  border-radius: 50px 20px;
 }
 
+.services-title h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.service-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-detail button {
+  background-color: rgb(217, 4, 41);
+  width: 10rem;
+  height: 3rem;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.service-detail button:hover {
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(217, 4, 41);
+  color:rgb(1, 0, 15);
+}
 /**************************** HOME COMPONENT END ***************************************/
 
 /*********************** FOOTER START ***************************/
@@ -414,15 +449,16 @@ ul li .link:hover::before {
   font-family: 'Pacifico'
 }
 @media (max-width:600px) {
+
   .errorContainer {
     display: block;
     flex-direction: row;
   }
+
  .errorContainer .error {
     margin: 50px;
     height: 40vh;
     background-color: rgb(217, 4, 41);
   }
-
 }
 /*********************** FOOTER END ***************************/

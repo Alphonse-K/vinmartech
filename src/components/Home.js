@@ -16,7 +16,25 @@ export default function Home() {
 
   const [index, setIndex] = useState(0);
 
-  const data = [
+  const data1 = [
+    {
+     image: require('../img/pexels-ono-kosuki-5647594.jpg'), 
+     caption:"Application mobile Android et/ou IOS sur Mesure.",
+     description:"Maintenez le contact auprès de vos clients via des Applications mobiles diverses."
+    },
+    {
+      image:require('../img/pexels-marta-branco-1194713.jpg'), 
+      caption:"Site Internet sur Mesure",
+      description:"Optez pour un site internet dynamique et responsif."
+     },
+     {
+      image:require('../img/pexels-pixabay-159304.jpg'), 
+      caption:"Réseau Informatique",
+      description:"Nous concevons et déployons un réseau informatique adapté à vos besoins.",
+     },
+  ]
+
+  const data2 = [
     {
      image: require('../img/pexels-ono-kosuki-5647594.jpg'), 
      caption:"Application mobile Android et/ou IOS sur Mesure.",
@@ -44,7 +62,6 @@ export default function Home() {
       description:"Nous serons à vos côtés pour la conception, le développement, le déploiement et la maintenance de programmes informatiques variés.", 
      },
   ]
-
   const handleSelect = (selectIndex, e) => {
       setIndex(selectIndex);
   }
@@ -53,7 +70,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        {data.map((slide, i) => {
+        {data1.map((slide, i) => {
           return (
             <Carousel.Item key={i}>        
               <img
@@ -101,14 +118,17 @@ export default function Home() {
         <div className='services-title'><h1>Nos Prestations</h1></div>
         <Zoom>
         <div className='services'>
-          {data.map((item, i) => {
+          {data2.map((item, i) => {
             return (
               <ServicesItem 
                 image={item.image} 
                 title={item.caption} 
                 description={item.description} 
                 key={i} 
-              />)})}           
+              />)})}
+        </div>
+        <div className='service-detail'>
+          <Link to="/expertises" className='link'><button>Expertises</button></Link>           
         </div>
       </Zoom>
       <h1>Home</h1>
