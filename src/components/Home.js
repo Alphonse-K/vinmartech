@@ -42,7 +42,7 @@ export default function Home() {
     },
     {
       image:require('../img/website.JPG'), 
-      caption:"Site Internet sur Mesure",
+      caption:"Site Vitrine sur Mesure",
       description:"Optez pour un site internet dynamique et responsif."
      },
      {
@@ -65,6 +65,11 @@ export default function Home() {
       image:require('../img/camera2.JPG'), 
       caption:"Caméra de Surveillance",
       description:"La caméra de surveillance est non seulement une sécurité, une protection, mais aussi un puissant élément de dissuasion. Grâce à elle, vous pourrez éviter les effractions à votre domicile.", 
+     },
+     {
+      image:require('../img/ecommerce.JPG'), 
+      caption:"Site E-Commerce sur mesure",
+      description:"Le commerce en ligne est devenu un atout puissant pour une entreprise, cela permet un développement plus important de la notoriété et l’attraction de nouveaux clients; Alors on y va.", 
      },
   ]
   const handleSelect = (selectIndex, e) => {

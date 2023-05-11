@@ -26,10 +26,13 @@ export default function Footer() {
             </div>
             <div className='footer-service col-xs-12 col-sm-12 col-md-3 col-lg-4'>
                 <h3>Service</h3>
-                <Link to="/" className='logoLinkFooter'><h6>Application Mobile</h6></Link>
-                <Link to="/" className='logoLinkFooter'><h6>Site Internet Vitrine</h6></Link>
-                <Link to="/" className='logoLinkFooter'><h6>Réseau Informatique</h6></Link>
-                <Link to="/" className='logoLinkFooter'><h6>Site E-Commerce</h6></Link>
+                <Link to="/expertises" className='logoLinkFooter'><h6>Développements Spécifiques</h6></Link>
+                <Link to="/expertises" className='logoLinkFooter'><h6>Maintenance Informatique</h6></Link>
+                <Link to="/expertises" className='logoLinkFooter'><h6>Caméra de Surveillance</h6></Link>
+                <Link to="/expertises" className='logoLinkFooter'><h6>Réseau Informatique</h6></Link>
+                <Link to="/expertises" className='logoLinkFooter'><h6>Application Mobile</h6></Link>
+                <Link to="/expertises" className='logoLinkFooter'><h6>Site E-Commerce</h6></Link>
+                <Link to="/expertises" className='logoLinkFooter'><h6>Site Vitrine</h6></Link>
             </div>
             <div className='footer-contact col-xs-12 col-sm-12 col-md-3 col-lg-4'>
                 <h3>Contact</h3>
