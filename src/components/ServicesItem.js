@@ -8,8 +8,8 @@ export default function ServicesItem(props) {
         <img className='service-img-container' src={props.image}  alt='' />
         <div className='item-title'><h5>{props.title}</h5></div> 
         <div className='service-description'>
-            <h3>Take Away:</h3>
-            <p>{props.description}</p>
+            <h3 style={{fontFamily: 'Georgia, Times New Roman Times, serif'}}>Take Away:</h3>
+            <p style={{fontFamily: 'Georgia, Times New Roman Times, serif'}}>{props.description}</p>
         </div>
     </div>
     </>

@@ -19,7 +19,7 @@ export default function Home() {
   const data1 = [
     {
      image: require('../img/pexels-ono-kosuki-5647594.jpg'), 
-     caption:"Application mobile Android et/ou IOS sur Mesure.",
+     caption:"Application mobile Android & IOS sur Mesure.",
      description:"Maintenez le contact auprès de vos clients via des Applications mobiles diverses."
     },
     {
@@ -36,30 +36,35 @@ export default function Home() {
 
   const data2 = [
     {
-     image: require('../img/pexels-ono-kosuki-5647594.jpg'), 
-     caption:"Application mobile Android et/ou IOS sur Mesure.",
+     image: require('../img/app5.JPG'), 
+     caption:"Application mobile Android & IOS",
      description:"Maintenez le contact auprès de vos clients via des Applications mobiles diverses."
     },
     {
-      image:require('../img/pexels-marta-branco-1194713.jpg'), 
+      image:require('../img/website.JPG'), 
       caption:"Site Internet sur Mesure",
       description:"Optez pour un site internet dynamique et responsif."
      },
      {
-      image:require('../img/pexels-pixabay-159304.jpg'), 
-      caption:"Réseau Informatique",
-      description:"Nous concevons et déployons un réseau informatique adapté à vos besoins.",
-     },
-     {
-      image:require('../img/pexels-pixabay-38544.jpg'), 
-      caption:"La conception de programmes informatiques variés",
+      image:require('../img/devspecific.jpg'), 
+      caption:"Développements Spécifiques",
       description:"Nous serons à vos côtés pour la conception, le développement, le déploiement et la maintenance de programmes informatiques variés.",
       
      },
      {
-      image:require('../img/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg'), 
+      image:require('../img/network.jpg'), 
+      caption:"Réseau Informatique",
+      description:"Nous concevons et déployons un réseau informatique adapté à vos besoins.",
+     },
+     {
+      image:require('../img/repair.png'), 
+      caption:"Maintenance Informatique",
+      description:"Grâce à une excellente équipe d’assistance réactive, nous nous chargeons d’assurer un service de maintenance informatique dans plusieurs domaines.",
+     },
+     {
+      image:require('../img/camera2.JPG'), 
       caption:"Caméra de Surveillance",
-      description:"Nous serons à vos côtés pour la conception, le développement, le déploiement et la maintenance de programmes informatiques variés.", 
+      description:"La caméra de surveillance est non seulement une sécurité, une protection, mais aussi un puissant élément de dissuasion. Grâce à elle, vous pourrez éviter les effractions à votre domicile.", 
      },
   ]
   const handleSelect = (selectIndex, e) => {
@@ -104,9 +109,9 @@ export default function Home() {
       </div>
       <div className='presentations'>
           <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 '>
-            <h1>Pourquoi travailler avec Vinmartech ?</h1>
-            <p>Notre cabinet est spécialisé dans la conception de sites Web professionnels, d'application mobile Android et/ou IOS et de programmes informatiques divers. Nous sommes passionnés par des créations qui reflètent l’identité de nos clients et qui leur permettent de se démarquer de la concurrence.</p>
-            <p>Nous vous aidons à créer une présence en ligne efficace et mémorable. Nous offrons une gamme complète de services, notamment la conception personnalisée de sites Web, le développement d'applications informatiques variées, le SEO, l’hébergement, la maintenance et la sécurité.</p>
+            <h1 style={{fontFamily: 'Georgia, Times New Roman Times, serif'}}>Pourquoi travailler avec Vinmartech ?</h1>
+            <p style={{fontFamily: 'Georgia, Times New Roman Times, serif'}}>Notre cabinet est spécialisé dans la conception de sites Web professionnels, d'application mobile Android et/ou IOS et de programmes informatiques divers. Nous sommes passionnés par des créations qui reflètent l’identité de nos clients et qui leur permettent de se démarquer de la concurrence.</p>
+            <p style={{fontFamily: 'Georgia, Times New Roman Times, serif'}}>Nous vous aidons à créer une présence en ligne efficace et mémorable. Nous offrons une gamme complète de services, notamment la conception personnalisée de sites Web, le développement d'applications informatiques variées, le SEO, l’hébergement, la maintenance et la sécurité.</p>
             <Link to="/expertises" className='link'><button>Expertises</button></Link>
           </div> 
           <div className='d-flex justify-content-center col-xs-12 col-sm-12 col-md-6 col-lg-6 '>
