@@ -13,10 +13,13 @@ import Expertises from './components/Expertises';
 
 function App() {
 
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
-    window.history.scrollRestoration = 'auto';
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   }, []);
-
   return (
     <BrowserRouter>
       <Routes>
