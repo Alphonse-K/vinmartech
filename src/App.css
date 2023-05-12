@@ -374,12 +374,12 @@ ul li .link:hover::before {
 }
 
 .newsletter {
-  background-color: yellow;
-  padding: 2rem;
+  background: rgba(255, 118, 1, 1.0);
+  background: linear-gradient(225deg, rgba(255, 118, 1, 1.0), rgba(176, 3, 3, 1.0));  padding: 2rem;
   border-radius: 5px;
-  border-style: solid;
-  border-color: rgb(217, 4, 41);
+  border-style: none;
   line-height: 2rem;
+  color: white;
 }
 
 .newsletter button {
@@ -387,6 +387,25 @@ ul li .link:hover::before {
   border-style: double;
   border-color: rgb(217, 4, 41);
 }
+
+.newsletter .checkbox {
+  line-height: 1rem;
+}
+
+.newsletter .checkbox {
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.newsletter .checkbox input {
+  margin-right: 1rem;
+}
+
+.newsletter .email-input {
+  border-radius: .5rem;
+  outline: none;
+}
+
 /**************************** HOME COMPONENT END ***************************************/
 
 /*********************** FOOTER START ***************************/
