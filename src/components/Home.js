@@ -64,7 +64,7 @@ export default function Home() {
      {
       image:require('../img/camera2.JPG'), 
       caption:"Caméra de Surveillance",
-      description:"La caméra de surveillance est non seulement une sécurité, une protection, mais aussi un puissant élément de dissuasion. Grâce à elle, vous pourrez éviter les effractions à votre domicile.", 
+      description:"La caméra de surveillance est non seulement une sécurité, une protection, mais aussi un puissant élément de dissuasion. Grâce à elle, vous pourrez éviter les effractions.", 
      },
      {
       image:require('../img/ecommerce.JPG'), 
@@ -78,13 +78,14 @@ export default function Home() {
 
   return (
     <div>
+        {/* <div></div> */}
       <Navbar />
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {data1.map((slide, i) => {
           return (
             <Carousel.Item key={i}>        
               <img
-                className="d-block w-100 h-100 "
+                className="d-block w-100 carousel"
                 src={slide.image}
                 alt="images"
               />
