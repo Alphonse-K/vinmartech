@@ -342,6 +342,31 @@ ul li .link:hover::before {
   border-color: rgb(217, 4, 41);
   color:rgb(1, 0, 15);
 }
+
+.digital {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.digital .digital-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digital .digital-text h1 {
+  color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  padding: 2rem;
+  background-color: rgba(217, 4, 41, 0.49);
+  border-radius: 2rem;
+  text-align: justify;
+}
+
 /**************************** HOME COMPONENT END ***************************************/
 
 /*********************** FOOTER START ***************************/
@@ -436,6 +461,11 @@ ul li .link:hover::before {
 
   .presentations .image2 {
     width: 50vw;
+  }
+
+  .digital {
+    display: flex;
+    flex-direction: column;
   }
 }
 

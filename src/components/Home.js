@@ -6,11 +6,12 @@ import { Link } from 'react-router-dom';
 
 import image1 from '../img/Allura - Love is in the Air.png';
 import image2 from '../img/Meeting.png';
+import image3 from '../img/apps2.jpg';
+
 import Navbar from './Navbar';
 import BackToTop from './BackToTop';
 import Footer from './Footer';
 import ServicesItem from './ServicesItem';
-// import ServicesItem from './ServicesItem';
 
 export default function Home() {
 
@@ -107,7 +108,7 @@ export default function Home() {
             <img src={image1} alt="Two talking ladies" className='homeImage1'/>
           </div>
         </Roll>
-        <Zoom triggerOnce='true'>
+        <Zoom>
           <div className='homeParagh col-sx-12'>
             <p>Mollit magna eu pariatur exercitation tempor Lorem in. Non consequat aliquip mollit nostrud minim sunt eu nulla nulla laborum aliquip. Et cillum consectetur labore nostrud est anim qui enim amet sit nulla minim ad elit.</p>
           </div>
@@ -127,7 +128,7 @@ export default function Home() {
           </div>
       </div>
         <div className='services-title'><h1>Nos Prestations</h1></div>
-        <Zoom triggerOnce='true'>
+        <Zoom>
         <div className='services'>
           {data2.map((item, i) => {
             return (
@@ -142,7 +143,11 @@ export default function Home() {
           <Link to="/expertises" className='link'><button>Expertises</button></Link>           
         </div>
       </Zoom>
-      <div>Home</div>
+      <div className='digital'>
+        <div className='digital-text col-xs-12 col-sm-12 col-md-6 col-lg-6'><h1>Adopter une stratégie de digitalisation est très favorable à l’amélioration des relations avec la clientèle, donner de la visibilité à votre activité, maintenir le lien avec vos clients. </h1>
+        </div>
+        <img className='col-xs-12 col-sm-12 col-md-6 col-lg-6' src={image3} alt='' />
+      </div>
       <h1>Home</h1>
       <h1>Home</h1>
       <h1>Home</h1>
