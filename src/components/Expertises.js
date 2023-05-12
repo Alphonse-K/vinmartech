@@ -8,7 +8,7 @@ export default function Expertises() {
     // <></>
     <div>
         <Navbar/>
-        <div>Expertises</div>
+        <div className='expertise-header'><h1>Nous sommes spécialisés dans la conception de programmes informatiques divers.</h1></div>
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>

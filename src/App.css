@@ -406,6 +406,15 @@ ul li .link:hover::before {
   outline: none;
 }
 
+/**************************** EXPERTISE COMPONENT START***********************************/
+.expertise-header {
+  background: rgba(255, 118, 1, 1.0);
+  background: linear-gradient(225deg, rgba(255, 118, 1, 1.0), rgba(176, 3, 3, 1.0));  padding: 2rem;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+/**************************** EXPERTISE COMPONENT END****************************************/
+
 /**************************** HOME COMPONENT END ***************************************/
 
 /*********************** FOOTER START ***************************/
