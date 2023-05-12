@@ -22,7 +22,6 @@ export default function Expertises() {
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
-        <div>Expertises</div>
         <BackToTop />
         <Footer/>
     </div>
