@@ -123,6 +123,10 @@ ul li .link:hover::before {
   background-color: radial-gradient(circle, #d90429, #c0041e, #a70315, #8f020b, #780000);
 }
 
+.carousel {
+  max-height: 100vh;
+}
+
 .captionh2 {
   font-size: 2rem;
   font-family: 'Pacifico', cursive;
