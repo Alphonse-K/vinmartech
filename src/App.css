@@ -367,6 +367,26 @@ ul li .link:hover::before {
   text-align: justify;
 }
 
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter {
+  background-color: yellow;
+  padding: 2rem;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgb(217, 4, 41);
+  line-height: 2rem;
+}
+
+.newsletter button {
+  width: 50px;
+  border-style: double;
+  border-color: rgb(217, 4, 41);
+}
 /**************************** HOME COMPONENT END ***************************************/
 
 /*********************** FOOTER START ***************************/
