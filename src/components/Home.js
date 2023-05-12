@@ -130,7 +130,7 @@ export default function Home() {
           </div>
       </div>
         <div className='services-title'><h1>Nos Prestations</h1></div>
-        <Zoom>
+        <Zoom triggerOnce={true}>
         <div className='services'>
           {data2.map((item, i) => {
             return (
@@ -145,11 +145,13 @@ export default function Home() {
           <Link to="/expertises" className='link'><button>Expertises</button></Link>           
         </div>
       </Zoom>
-      <div className='digital'>
-        <div className='digital-text col-xs-12 col-sm-12 col-md-6 col-lg-6'><h1>Adopter une stratégie de digitalisation est très favorable à l’amélioration des relations avec la clientèle, donner de la visibilité à votre activité, maintenir le lien avec vos clients. </h1>
+      <Slide>
+        <div className='digital'>
+            <div className='digital-text col-xs-12 col-sm-12 col-md-6 col-lg-6'><h1>Adopter une stratégie de digitalisation est très favorable à l’amélioration des relations avec la clientèle, donner de la visibilité à votre activité, maintenir le lien avec vos clients. </h1>
+            </div>
+          <img className='col-xs-12 col-sm-12 col-md-6 col-lg-6' src={image3} alt='' />
         </div>
-        <img className='col-xs-12 col-sm-12 col-md-6 col-lg-6' src={image3} alt='' />
-      </div>
+      </Slide>
     {/* <div>Home</div> */}
     <Newsletter />
     <BackToTop />
