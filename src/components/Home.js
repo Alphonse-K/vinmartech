@@ -13,6 +13,7 @@ import BackToTop from './BackToTop';
 import Footer from './Footer';
 import ServicesItem from './ServicesItem';
 import Newsletter from './Newsletter';
+import Testimonials from './Testimonials';
 
 export default function Home() {
 
@@ -153,6 +154,7 @@ export default function Home() {
         </div>
       </Slide>
     {/* <div>Home</div> */}
+    <Testimonials />
     <Newsletter />
     <BackToTop />
     <Footer />
