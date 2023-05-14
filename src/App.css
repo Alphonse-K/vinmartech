@@ -415,6 +415,38 @@ ul li .link:hover::before {
   margin: 50px;
 }
 /**************************** EXPERTISE COMPONENT END****************************************/
+/**************************** SPINNER COMPONENT START****************************************/
+.loader-container {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  background: rgb(217, 4, 41);
+  border-radius: 50%;
+  position: relative;
+  animation: roll 1s ease-in-out infinite alternate;
+}
+.loader:after{
+  content:"";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  border: 5px solid ;
+  border-color: #ffffff transparent;
+}
+@keyframes roll {
+  0% {
+    transform: translateX(-150%) rotate(0deg) ;
+  }
+  100% {
+    transform:  translateX(150%) rotate(360deg);
+  }
+}/**************************** SPINNER COMPONENT END****************************************/
 
 /**************************** HOME COMPONENT END ***************************************/
 
