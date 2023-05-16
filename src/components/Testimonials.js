@@ -10,24 +10,31 @@ SwiperCore.use([Autoplay, EffectCoverflow, Pagination]);
 
 const slide_img = [
   {
-    image: "https://swiperjs.com/demos/images/nature-1.jpg",
+    name: "Clarence",
+    image: require("../img/pinelo.jpg"),
     quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
   },
-
   {
-    image: "https://swiperjs.com/demos/images/nature-2.jpg",
+    name: "Albert",
+    image: require("../img/albert.jpg"),
     quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
   },
-
   {
-    image: "https://swiperjs.com/demos/images/nature-4.jpg",
+    name: "Sylvie",
+    image: require("../img/clarence.jpg"),
     quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
   },
-
   {
-    image: "https://swiperjs.com/demos/images/nature-3.jpg",
+    name: "Moussa",
+    image: require("../img/moussa.jpg"),
     quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
-  }];
+  },
+  {
+    name: "Salma",
+    image: require("../img/veil-woman.JPG"),
+    quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
+  }
+];
 
 const Testimonials = () => {
   return (
@@ -42,26 +49,26 @@ const Testimonials = () => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 0,
-          modifier: 1,
+          depth: 100,
+          modifier: 6,
           slideShadows: true,
         }}
         pagination={{
           clickable: true,
         }}
-        className="mySwiper"
       >
         {slide_img.map((img, i) => {
           return (
-            <div className="slider-container">
-              <SwiperSlide key={i}>
+            <SwiperSlide key={i}>
+                <div className="slider-container">
                   <div className="slider-p" >
                     <img src={img.image} alt="" />
-                    <FontAwesomeIcon icon={faQuoteLeft} style={{color: "#fa0000",}} />
+                    <h4>___ {img.name}</h4>
+                    <FontAwesomeIcon icon={faQuoteLeft} style={{color: "#fffff", fontSize: "5rem"}} />
                     <p>{img.quote}</p>
                   </div>
+                </div>
               </SwiperSlide>
-            </div>
           );
         })}
       </Swiper>

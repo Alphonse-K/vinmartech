@@ -450,6 +450,8 @@ ul li .link:hover::before {
     transform:  translateX(150%) rotate(360deg);
   }
 }/**************************** SPINNER COMPONENT END****************************************/
+
+/**************************** TESTIMONIALS COMPONENT START ***************************************/
 .swiper-container h1 {
   font-family: 'Pacifico', cursive;
   font-size: 4rem;
@@ -458,7 +460,6 @@ ul li .link:hover::before {
 }
 
 .swiper {
-  background-color: rgb(211, 10, 10);
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -481,7 +482,7 @@ ul li .link:hover::before {
 
 
 .slider-p {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(217, 4, 41);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -490,13 +491,10 @@ ul li .link:hover::before {
   font-weight: 500;
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 70%;
+  width: 60%;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-left: 2rem;
-  border-width: 3px;
-  border-style: solid;
-  border-color: rgb(218, 136, 136);
+  color: white;
 }
 
 .swiper-slide img {
@@ -505,8 +503,21 @@ ul li .link:hover::before {
   height: 20%;
   border-radius: 50%;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
+
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 1;
+  border: white solid 1px;
+  background-color: transparent;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+/**************************** TESTIMONIALS COMPONENT END ***************************************/
+
+
 
 /**************************** HOME COMPONENT END ***************************************/
 
