@@ -410,15 +410,15 @@ ul li .link:hover::before {
 
 /**************************** EXPERTISE COMPONENT START***********************************/
 .expertise-header {
-  background-image: url('./img/apps2.jpg');
+  background-image: url('./img/monitor.jpg');
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size: auto;
   height: 100vh;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-family: 'Pacifico', cursive;
-  margin: 50px;
+  /* margin: 50px; */
 }
 
 /**************************** EXPERTISE COMPONENT END****************************************/
