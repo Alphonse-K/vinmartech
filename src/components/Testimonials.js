@@ -1,3 +1,5 @@
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import SwiperCore, {Autoplay, EffectCoverflow, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,32 +9,42 @@ import "swiper/swiper.min.css";
 SwiperCore.use([Autoplay, EffectCoverflow, Pagination]);
 
 const slide_img = [
-  "https://swiperjs.com/demos/images/nature-1.jpg",
-  "https://swiperjs.com/demos/images/nature-2.jpg",
-  "https://swiperjs.com/demos/images/nature-3.jpg",
-  "https://swiperjs.com/demos/images/nature-4.jpg",
-  "https://swiperjs.com/demos/images/nature-5.jpg",
-  "https://swiperjs.com/demos/images/nature-6.jpg",
-  "https://swiperjs.com/demos/images/nature-7.jpg",
-  "https://swiperjs.com/demos/images/nature-8.jpg",
-  "https://swiperjs.com/demos/images/nature-9.jpg",
-];
+  {
+    image: "https://swiperjs.com/demos/images/nature-1.jpg",
+    quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
+  },
+
+  {
+    image: "https://swiperjs.com/demos/images/nature-2.jpg",
+    quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
+  },
+
+  {
+    image: "https://swiperjs.com/demos/images/nature-4.jpg",
+    quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
+  },
+
+  {
+    image: "https://swiperjs.com/demos/images/nature-3.jpg",
+    quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
+  }];
 
 const Testimonials = () => {
   return (
-    <div>
+    <div className="swiper-container">
+      <h1>Voici ce que nos partenaires disent de nous</h1>
       <Swiper
         autoplay={{"delay": 4000}}
-        effect={"flip"}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={2}
+        slidesPerView={1}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 50,
-          modifier: 6,
-          slideShadows: false,
+          depth: 0,
+          modifier: 1,
+          slideShadows: true,
         }}
         pagination={{
           clickable: true,
@@ -41,9 +53,15 @@ const Testimonials = () => {
       >
         {slide_img.map((img, i) => {
           return (
-            <SwiperSlide key={i}>
-              <img src={img} alt="" />
-            </SwiperSlide>
+            <div className="slider-container">
+              <SwiperSlide key={i}>
+                  <div className="slider-p" >
+                    <img src={img.image} alt="" />
+                    <FontAwesomeIcon icon={faQuoteLeft} style={{color: "#fa0000",}} />
+                    <p>{img.quote}</p>
+                  </div>
+              </SwiperSlide>
+            </div>
           );
         })}
       </Swiper>
