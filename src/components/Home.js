@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { Slide, Zoom, Flip, Roll, Bounce } from "react-awesome-reveal";
+import { Slide, Zoom, Bounce, Roll } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
 
 
@@ -94,9 +94,9 @@ export default function Home() {
                 alt="images"
               />
               <Carousel.Caption key={i} className='d-flex flex-column justify-content-center h-100'>
-                <Flip>
+                <Zoom>
                   <h2 className='captionh2'>{slide.caption}</h2>
-                </Flip>
+                </Zoom>
                 <Slide direction='right'>            
                   <p className='captionp'>{slide.description}</p>
                 </Slide>

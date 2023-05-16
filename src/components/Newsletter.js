@@ -25,7 +25,7 @@ export default function Newsletter() {
             <label htmlFor="news" className='d-inline-block'>votre adresse email:</label>
             <div className='d-flex'>
               <input className='email-input col-xs-12 col-sm-8 col-md-6 col-lg-6' id='news' type='email' placeholder='Votre adresse email' onChange={(e) => setEmail(e.target.value)}/>
-              <button><FontAwesomeIcon icon={faPaperPlane} style={{color: "#d90429",}} onClick={onSubmit}/></button>
+              <button><FontAwesomeIcon icon={faPaperPlane} style={{color: "#ffff",}} onClick={onSubmit}/></button>
             </div>
             <div className='checkbox d-flex' >
                 <input type="checkbox" name="cheese" id="check" checked={agreement} onChange={checkHandler}></input>

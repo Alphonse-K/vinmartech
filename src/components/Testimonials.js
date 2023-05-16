@@ -45,7 +45,7 @@ const Testimonials = () => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={1}
+        slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -64,7 +64,7 @@ const Testimonials = () => {
                   <div className="slider-p" >
                     <img src={img.image} alt="" />
                     <h4>___ {img.name}</h4>
-                    <FontAwesomeIcon icon={faQuoteLeft} style={{color: "#fffff", fontSize: "5rem"}} />
+                    <FontAwesomeIcon icon={faQuoteLeft} style={{color: "#fffff", fontSize: "4rem"}} />
                     <p>{img.quote}</p>
                   </div>
                 </div>
