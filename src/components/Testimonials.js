@@ -41,7 +41,7 @@ const Testimonials = () => {
     <div className="swiper-container">
       <h1>Voici ce que nos partenaires disent de nous</h1>
       <Swiper
-        autoplay={{"delay": 4000}}
+        autoplay={{"delay": 3000}}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}

@@ -410,6 +410,10 @@ ul li .link:hover::before {
 
 /**************************** EXPERTISE COMPONENT START***********************************/
 .expertise-header {
+  background-image: url('./img/apps2.jpg');
+  background-repeat: no-repeat;
+  background-size:auto;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
