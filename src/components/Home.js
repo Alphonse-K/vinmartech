@@ -153,7 +153,6 @@ export default function Home() {
           <img className='col-xs-12 col-sm-12 col-md-6 col-lg-6' src={image3} alt='' />
         </div>
       </Slide>
-    {/* <div>Home</div> */}
     <Testimonials />
     <Newsletter />
     <BackToTop />
