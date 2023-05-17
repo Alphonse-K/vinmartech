@@ -412,20 +412,23 @@ ul li .link:hover::before {
 
 /**************************** EXPERTISE COMPONENT START***********************************/
 .expertise-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex;
+  align-items:center;
+  justify-content: center; */
   font-family: 'Cinzel', serif;
-  padding: 50px;
-  background: #fe8c00;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
+  background-color: black;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.expertise-header img {
+  object-fit: cover;
+  opacity: .4;
 }
 
 .arrow {
   position: absolute;
-  top: 50%;
+  bottom: 10%;
   left: 50%;
   transform: translate(50%, 50%);
   cursor: pointer;
@@ -435,8 +438,8 @@ ul li .link:hover::before {
   display: block;
   width: 2.5vw;
   height: 2.5vw;
-  border-bottom: 5px solid rgb(226, 7, 7);
-  border-right: 5px solid rgb(216, 9, 9);
+  border-bottom: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid rgb(255, 255, 255);
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2s infinite;
@@ -465,9 +468,10 @@ ul li .link:hover::before {
 }
 
 .expertise-header h1 {
-  position: absolute;
-  text-align: center;
-  z-index: 1;
+  color: white;
+  text-align: justify;
+  font-size: 3rem;
+  /* z-index: 1; */
 }
 
 /**************************** EXPERTISE COMPONENT END****************************************/
