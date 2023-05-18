@@ -37,9 +37,9 @@ export default function Expertises() {
         <div className='expertise-title' id='button'><h1>Voici ce que nous proposons:</h1></div>
         <section className='expertise-details'>
           <div id='specific' className='container-img-text'>
-            <img src={require('../img/christopher.jpg')} alt='' />
-            <div className='expertise-single-text'>
-              <h3>Développements Spécifiques</h3>
+            <img src={require('../img/christopher.jpg')} alt='' className='col-xs-12 col-sm-12 col-md-3 col-lg-4'/>
+            <div className='expertise-single-text col-xs-12 col-sm-12 col-md-3 col-lg-4'>
+              <h2>Développements Spécifiques:</h2>
               <p>Ipsum enim culpa ad proident commodo eiusmod sint magna nulla ut irure do. Anim mollit occaecat deserunt pariatur. Sint do dolore ipsum elit laborum incididunt veniam aliqua. Exercitation aute eu id elit labore aute ut qui ullamco culpa magna culpa. Mollit anim labore consectetur aute aliqua culpa aliquip sit.</p>
               <HashLink to="/contact#contact-quote"><button>Vous avez un projet?</button></HashLink>
             </div>
