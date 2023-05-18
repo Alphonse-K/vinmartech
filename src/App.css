@@ -535,13 +535,15 @@ ul li .link:hover::before {
 .expertise-details img {
   width: 40%;
   height: 50vh;
+  /* margin-top: 3rem;
+  margin-bottom: 3rem; */
 }
 
 .expertise-details .container-img-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 }
 
 .expertise-details .expertise-single-text {
