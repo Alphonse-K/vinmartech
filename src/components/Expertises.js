@@ -42,9 +42,16 @@ export default function Expertises() {
               <h2>Développements Spécifiques:</h2>
               <p>Ipsum enim culpa ad proident commodo eiusmod sint magna nulla ut irure do. Anim mollit occaecat deserunt pariatur. Sint do dolore ipsum elit laborum incididunt veniam aliqua. Exercitation aute eu id elit labore aute ut qui ullamco culpa magna culpa. Mollit anim labore consectetur aute aliqua culpa aliquip sit.</p>
               <HashLink to="/contact#contact-quote"><button>Vous avez un projet?</button></HashLink>
-            </div>
+            </div>      
           </div>
-
+          <div id='repair' className='container-img-text'>
+            <div className='expertise-single-text col-xs-12 col-sm-12 col-md-3 col-lg-4'>
+              <h2>Développements Spécifiques:</h2>
+              <p>Ipsum enim culpa ad proident commodo eiusmod sint magna nulla ut irure do. Anim mollit occaecat deserunt pariatur. Sint do dolore ipsum elit laborum incididunt veniam aliqua. Exercitation aute eu id elit labore aute ut qui ullamco culpa magna culpa. Mollit anim labore consectetur aute aliqua culpa aliquip sit.</p>
+              <HashLink to="/contact#contact-quote"><button>Vous avez un projet?</button></HashLink>
+            </div>
+            <img src={require('../img/fix-comp.jpg')} alt='' className='col-xs-12 col-sm-12 col-md-3 col-lg-4'/>
+          </div>
         </section>
         <div>Expertises</div>
         <div id='app' style={{color: 'orange'}}>Application</div>
@@ -62,7 +69,6 @@ export default function Expertises() {
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
-        <div id='repair' style={{color: '#2015ed'}}>Repair</div>
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>

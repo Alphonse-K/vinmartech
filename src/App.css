@@ -541,10 +541,10 @@ ul li .link:hover::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .expertise-details .expertise-single-text {
-  background-color: green;
   width: 50%;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -841,7 +841,6 @@ ul li .link:hover::before {
   }
 
   .expertise-details .expertise-single-text {
-    background-color: green;
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
