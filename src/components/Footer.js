@@ -27,13 +27,12 @@ export default function Footer() {
             </div>
             <div className='footer-service col-xs-12 col-sm-12 col-md-3 col-lg-4'>
                 <h3>Service</h3>
-                <Link to="/expertises" className='logoLinkFooter'><h6>Développements Spécifiques</h6></Link>
-                <Link to="/expertises" className='logoLinkFooter'><h6>Maintenance Informatique</h6></Link>
-                <Link to="/expertises" className='logoLinkFooter'><h6>Caméra de Surveillance</h6></Link>
-                <Link to="/expertises" className='logoLinkFooter'><h6>Réseau Informatique</h6></Link>
-                <Link to="/expertises" className='logoLinkFooter'><h6>Application Mobile</h6></Link>
-                <Link to="/expertises" className='logoLinkFooter'><h6>Site E-Commerce</h6></Link>
-                <Link to="/expertises#vitrine" className='logoLinkFooter'><h6>Site Vitrine</h6></Link>
+                <HashLink className='logoLinkFooter' to='/expertises#specific'><h6>Développements Spécifiques</h6></HashLink>
+                <HashLink className='logoLinkFooter' to='/expertises#repair'><h6>Maintenance Informatique</h6></HashLink>
+                <HashLink className='logoLinkFooter' to='/expertises#surveillance'><h6>Caméra de Surveillance</h6></HashLink>
+                <HashLink className='logoLinkFooter' to='/expertises#network'><h6>Réseau Informatique</h6></HashLink>
+                <HashLink className='logoLinkFooter' to='/expertises#app'><h6>Application Mobile</h6></HashLink>
+                <HashLink className='logoLinkFooter' to='/expertises#ecommerce'><h6>Site E-Commerce</h6></HashLink>
                 <HashLink className='logoLinkFooter' to='/expertises#vitrine'><h6>Site Vitrine</h6></HashLink>
             </div>
             <div className='footer-contact col-xs-12 col-sm-12 col-md-3 col-lg-4'>

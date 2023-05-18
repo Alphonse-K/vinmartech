@@ -26,37 +26,37 @@ export default function Expertises() {
             </HashLink>
           </section>
         </div>
+        <div id='specific' style={{color: 'green'}}>Développements</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div id='app' style={{color: 'orange'}}>Application</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div id="vitrine" style={{color: 'red'}}>vitrine</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div id='ecommerce' style={{color: 'grey'}}>Ecommerce</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div id='repair' style={{color: '#2015ed'}}>Repair</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div id='network' style={{color: '#1e969e'}}>network</div>
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div id="vitrine" style={{color: 'red'}}>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
-        <div>Expertises</div>
+        <div id='surveillance' style={{color: '#cc0eb3'}}>Surveillance</div>
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
