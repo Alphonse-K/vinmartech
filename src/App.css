@@ -489,6 +489,7 @@ ul li .link:hover::before {
 }
 
 .expertise-intro button {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 30px;
   border-style: none;
   width: 250px;
@@ -505,6 +506,7 @@ ul li .link:hover::before {
   color:rgb(0, 0, 0);
   background-color: white;
   transition: background-color 1s ease-in-out;
+  font-family: 'Pacifico', cursive;
 }
 
 
