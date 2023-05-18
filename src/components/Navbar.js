@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { Slide } from 'react-awesome-reveal';
+import { HashLink } from 'react-router-hash-link';
 
 
 
