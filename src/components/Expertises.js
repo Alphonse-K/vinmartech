@@ -30,11 +30,22 @@ export default function Expertises() {
           <h1>Nous Offrons</h1>
           <h1>Une Meilleure Qualité</h1>
           <h1>De Service en Développements Informatique !</h1>
+          <p>« La marque d’une entreprise est comme la réputation de quelqu’un : vous la développez en effectuant un travail remarquable sur des tâches difficiles. »</p>
+          <h6>— Jeff Bezos, fondateur et dirigeant d’Amazon</h6>
           <HashLink to="/contact#contact-quote"><button>Obtenez un Devis</button></HashLink>
         </div>
-        <div className='expertises-title' id='button'>Nous proposons une gamme de services pour répondre à vos attentes:</div>
-        <div id='specific' style={{color: 'green'}}>Développements</div>
-        <div>Expertises</div>
+        <div className='expertise-title' id='button'><h1>Voici ce que nous proposons:</h1></div>
+        <section className='expertise-details'>
+          <div id='specific' className='container-img-text'>
+            <img src={require('../img/christopher.jpg')} alt='' />
+            <div className='expertise-single-text'>
+              <h3>Développements Spécifiques</h3>
+              <p>Ipsum enim culpa ad proident commodo eiusmod sint magna nulla ut irure do. Anim mollit occaecat deserunt pariatur. Sint do dolore ipsum elit laborum incididunt veniam aliqua. Exercitation aute eu id elit labore aute ut qui ullamco culpa magna culpa. Mollit anim labore consectetur aute aliqua culpa aliquip sit.</p>
+              <HashLink to="/contact#contact-quote"><button>Vous avez un projet?</button></HashLink>
+            </div>
+          </div>
+
+        </section>
         <div>Expertises</div>
         <div id='app' style={{color: 'orange'}}>Application</div>
         <div>Expertises</div>
