@@ -3,6 +3,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import BackToTop from './BackToTop';
 import { Bounce } from 'react-awesome-reveal';
+import { HashLink } from 'react-router-hash-link';
+
 
 export default function Expertises() {
   return (
@@ -15,11 +17,13 @@ export default function Expertises() {
             <Bounce>
               <h1>Nous sommes spécialisés dans la conception de programmes informatiques divers, et bien d'autres.</h1>
             </Bounce>
-            <div className="arrow">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>  
+            <HashLink to='#button'>
+              <div className="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>  
+            </HashLink>
           </section>
         </div>
         <div>Expertises</div>
@@ -31,9 +35,33 @@ export default function Expertises() {
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
+        <div id="vitrine" style={{color: 'red'}}>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div>Expertises</div>
+        <div id='button'>Expertises</div>
         <BackToTop />
         <Footer/>
     </div>

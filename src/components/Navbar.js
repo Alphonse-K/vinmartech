@@ -31,7 +31,7 @@ export default function Navbar() {
     // <div></div>
     <div>
         <div className="logoFont" id='fabars' >
-            <Link to="/" className='logoLink'><h1 className="logo">Vinmartech-Sarlu</h1></Link>
+            <Link to="/" className='logoLink' id='home'><h1 className="logo">Vinmartech-Sarlu</h1></Link>
             <div className="font" onClick={handleClick1}><FontAwesomeIcon icon={faBars}/></div>
         </div>  
         <div className='navbar' id='navpage'>
