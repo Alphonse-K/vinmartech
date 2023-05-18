@@ -32,8 +32,8 @@ export default function Expertises() {
           <h1>De Service en Développements Informatique !</h1>
           <HashLink to="/contact#contact-quote"><button>Obtenez un Devis</button></HashLink>
         </div>
+        <div className='expertises-title' id='button'>Nous proposons une gamme de services pour répondre à vos attentes:</div>
         <div id='specific' style={{color: 'green'}}>Développements</div>
-        <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
         <div id='app' style={{color: 'orange'}}>Application</div>
@@ -67,7 +67,7 @@ export default function Expertises() {
         <div>Expertises</div>
         <div>Expertises</div>
         <div>Expertises</div>
-        <div id='button'>Expertises</div>
+        <div>Expertises</div>
         <BackToTop />
         <Footer/>
     </div>
