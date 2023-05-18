@@ -20,7 +20,7 @@ export default function Newsletter() {
       <div className='newsletter-container'>
           <div className='newsletter col-xs-12 col-sm-12 col-md-8 col-lg-8'>
             <h1><b>Vinmartech</b>,</h1>
-            <h1>Préparez vous à réussir votre digital! </h1>
+            <h1>Préparez vous à réussir votre aventure digital! </h1>
             <h6>Recevez votre newsletter directement dans votre boîte mail</h6>
             <label htmlFor="news" className='d-inline-block'>votre adresse email:</label>
             <div className='d-flex'>
