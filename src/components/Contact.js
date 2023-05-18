@@ -17,6 +17,26 @@ export default function Contact() {
       <h1>Contact</h1>
       <h1>Contact</h1>
       <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1 id='contact-quote' style={{color: 'red'}}>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
+      <h1>Contact</h1>
       <BackToTop />
       <Footer />
     </div>

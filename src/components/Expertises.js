@@ -15,7 +15,7 @@ export default function Expertises() {
           <img src={require('../img/desktop.jpg')} alt='' />
           <section className='expertise-text'>
             <Bounce>
-              <h1>Nous sommes spécialisés dans la conception de programmes informatiques divers, et bien d'autres.</h1>
+              <h1>Simplifier votre quotidien par le billet de produits digitaux innovants, tel est notre objectif.</h1>
             </Bounce>
             <HashLink to='#button'>
               <div className="arrow">
@@ -25,6 +25,12 @@ export default function Expertises() {
               </div>  
             </HashLink>
           </section>
+        </div>
+        <div className='expertise-intro'>
+          <h1>Nous Offrons</h1>
+          <h1>Une Meilleure Qualité</h1>
+          <h1>De Service en Développements Informatique !</h1>
+          <HashLink to="/contact#contact-quote"><button>Obtenez un Devis</button></HashLink>
         </div>
         <div id='specific' style={{color: 'green'}}>Développements</div>
         <div>Expertises</div>
