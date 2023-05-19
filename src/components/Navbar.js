@@ -28,7 +28,7 @@ export default function Navbar() {
             clickable2.style.display='none';
         }
     }
-    
+
   return (
     // <div></div>
     <div>

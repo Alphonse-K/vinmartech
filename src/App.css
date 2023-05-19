@@ -679,7 +679,22 @@ ul li .link:hover::before {
 
 /**************************** TESTIMONIALS COMPONENT END ***************************************/
 
+/**************************** ABOUT SECTION START ***************************************/
+.about {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 
+.about .about-body {
+  display: flex;
+}
+.about .about-body img {
+  width: 50%;
+  height: 60vh;
+}
+/**************************** ABOUT SECTION END ***************************************/
 
 /**************************** HOME COMPONENT END ***************************************/
 
