@@ -535,8 +535,6 @@ ul li .link:hover::before {
 .expertise-details img {
   width: 40%;
   height: 50vh;
-  /* margin-top: 3rem;
-  margin-bottom: 3rem; */
 }
 
 .expertise-details .container-img-text {
