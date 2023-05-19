@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { Slide } from 'react-awesome-reveal';
+import { HashLink } from 'react-router-hash-link';
 
 
 
@@ -48,7 +49,7 @@ export default function Navbar() {
                         <Link to="/" className='link'>Accueil</Link>
                         </li>
                         <li>
-                        <Link to="/about" className='link'>À propos</Link>
+                        <HashLink to="/#about" className='link'>À propos</HashLink>
                         </li>
                         <li>
                         <Link to="/expertises" className='link'>Expertises</Link>
