@@ -739,6 +739,67 @@ ul li .link:hover::before {
 
 /**************************** HOME COMPONENT END ***************************************/
 
+
+/**************************** CONTACT COMPONENT START ***************************************/
+.contact-section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-section .contact-header {
+  text-align: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact-header p {
+  text-align: center;
+}
+
+.contact-section .form {
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 4rem;
+}
+
+.contact-section .form .contact-form {
+  border: rgba(217, 4, 41, .5) solid 1rem;
+  width: 50%;
+  padding-top: 3rem;
+}
+
+.form .contact-form {
+ padding-left: 3rem;
+ padding-right: 3rem;
+}
+
+.form .contact-form input {
+  width: 100%;
+  padding: .6rem;
+  margin-bottom: 3rem;
+}
+
+.form .contact-form textarea {
+  width: 100%;
+  padding: .6rem;
+  min-height: 30vh;
+  margin-bottom: 3rem;
+}
+
+.form .contact-form input[type='submit'] {
+  background-color: rgb(217, 4, 41);
+  border-style: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 20px;
+}
+/*********************** CONTACT COMPONENT END ***************************/
+
+
 /*********************** FOOTER START ***************************/
 
 .footerParent {
