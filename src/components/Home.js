@@ -14,6 +14,7 @@ import Footer from './Footer';
 import ServicesItem from './ServicesItem';
 import Newsletter from './Newsletter';
 import Testimonials from './Testimonials';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Home() {
 
@@ -122,7 +123,7 @@ export default function Home() {
             <h1 style={{fontFamily: 'Georgia, Times New Roman Times, serif'}}>Pourquoi travailler avec Vinmartech ?</h1>
             <p style={{fontFamily: 'Georgia, Times New Roman Times, serif'}}>Notre cabinet est spécialisé dans la conception de sites Web professionnels, d'application mobile Android et/ou IOS et de programmes informatiques divers. Nous sommes passionnés par des créations qui reflètent l’identité de nos clients et qui leur permettent de se démarquer de la concurrence.</p>
             <p style={{fontFamily: 'Georgia, Times New Roman Times, serif'}}>Nous vous aidons à créer une présence en ligne efficace et mémorable. Nous offrons une gamme complète de services, notamment la conception personnalisée de sites Web, le développement d'applications informatiques variées, le SEO, l’hébergement, la maintenance et la sécurité.</p>
-            <Link to="/expertises" className='link'><button>Expertises</button></Link>
+            <HashLink to="/expertises#home" className='link'><button>Expertises</button></HashLink>
           </div> 
           <div className='d-flex justify-content-center col-xs-12 col-sm-12 col-md-6 col-lg-6 '>
           <Bounce>
@@ -143,7 +144,7 @@ export default function Home() {
               />)})}
         </div>
         <div className='service-detail'>
-          <Link to="/expertises" className='link'><button>Expertises</button></Link>           
+          <HashLink to="/expertises#home" className='link'><button>Expertises</button></HashLink>           
         </div>
       </Zoom>
       <Slide>
