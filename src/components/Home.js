@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Slide, Zoom, Bounce, Roll } from "react-awesome-reveal";
-import { Link } from 'react-router-dom';
-
 
 import image1 from '../img/Allura - Love is in the Air.png';
 import image2 from '../img/Meeting.png';
