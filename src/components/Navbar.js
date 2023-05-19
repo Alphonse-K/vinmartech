@@ -46,16 +46,16 @@ export default function Navbar() {
                     <ul>
                     <Slide cascade>
                         <li>
-                        <Link to="/" className='link'>Accueil</Link>
+                        <HashLink to="/" className='link'>Accueil</HashLink>
                         </li>
                         <li>
                         <HashLink to="/#about" className='link'>À propos</HashLink>
                         </li>
                         <li>
-                        <Link to="/expertises" className='link'>Expertises</Link>
+                        <HashLink to="/expertises#expertises" className='link'>Expertises</HashLink>
                         </li>
                         <li>
-                        <Link to="/contact" className='link'>Contact</Link>
+                        <HashLink to="/contact#contact" className='link'>Contact</HashLink>
                         </li>
                     </Slide>
                     </ul>

@@ -155,10 +155,12 @@ export default function Home() {
     <div className='about' id='about'>
       <div className='about-header'>
         <h1>À propos de nous:</h1>
+        <div style={{width: '50%'}}>
         <hr style={{color: 'red'}}/>
+        </div>
       </div>
       <div className='about-body'>
-        <div>
+        <div style={{backgroundColor: 'blue'}} >
           <p>Ut in pariatur Lorem velit minim deserunt cupidatat velit fugiat minim. Et dolore laboris cupidatat consectetur fugiat fugiat ipsum culpa eiusmod nulla eiusmod veniam sunt. Labore commodo consectetur anim exercitation. Sunt consequat minim laborum sunt duis. Sit nisi eu reprehenderit anim nostrud consequat culpa velit laboris id.</p>
           <HashLink to="/contact#contact-quote"><button>Vous avez un projet?</button></HashLink>
         </div>

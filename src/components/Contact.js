@@ -5,7 +5,7 @@ import BackToTop from './BackToTop';
 
 export default function Contact() {
   return (
-    <div>
+    <div id='contact'>
       <Navbar />
       <h1>Contact</h1>
       <h1>Contact</h1>

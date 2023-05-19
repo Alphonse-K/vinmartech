@@ -9,7 +9,7 @@ import { HashLink } from 'react-router-hash-link';
 export default function Expertises() {
   return (
     // <></>
-    <div>
+    <div id='expertises'>
         <Navbar/>
         <div className='expertise-header'>
           <img src={require('../img/desktop.jpg')} alt='' />
