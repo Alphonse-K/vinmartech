@@ -104,8 +104,8 @@ export default function Expertises() {
           </div>
         </Slide>
         </section>
-        <div>Expertises</div>
-        <div>Expertises</div>
+        {/* <div>Expertises</div>
+        <div>Expertises</div> */}
         <BackToTop />
         <Footer/>
     </div>
