@@ -72,7 +72,7 @@ export default function Expertises() {
               <p>Ipsum enim culpa ad proident commodo eiusmod sint magna nulla ut irure do. Anim mollit occaecat deserunt pariatur. Sint do dolore ipsum elit laborum incididunt veniam aliqua. Exercitation aute eu id elit labore aute ut qui ullamco culpa magna culpa. Mollit anim labore consectetur aute aliqua culpa aliquip sit.</p>
               <HashLink to="/contact#contact-quote"><button>Vous avez un projet?</button></HashLink>
             </div>
-            <img src={require('../img/comp-network')} alt='' className='col-xs-12 col-sm-12 col-md-3 col-lg-4'/>
+            <img src={require('../img/comp-network.jpg')} alt='' className='col-xs-12 col-sm-12 col-md-3 col-lg-4'/>
           </div>
         </section>
         <div>Expertises</div>
