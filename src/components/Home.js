@@ -153,18 +153,18 @@ export default function Home() {
         </div>
       </Slide>
     <div className='about' id='about'>
-      <div className='about-header'>
+      <div className='about-header col-xs-12 col-sm-12 col-md-6 col-lg-6'>
         <h1>À propos de nous:</h1>
         <div style={{width: '50%'}}>
         <hr style={{color: 'red'}}/>
         </div>
       </div>
       <div className='about-body'>
-        <div style={{backgroundColor: 'blue'}} >
+        <div className='text col-xs-12 col-sm-12 col-md-6 col-lg-6'>
           <p>Ut in pariatur Lorem velit minim deserunt cupidatat velit fugiat minim. Et dolore laboris cupidatat consectetur fugiat fugiat ipsum culpa eiusmod nulla eiusmod veniam sunt. Labore commodo consectetur anim exercitation. Sunt consequat minim laborum sunt duis. Sit nisi eu reprehenderit anim nostrud consequat culpa velit laboris id.</p>
           <HashLink to="/contact#contact-quote"><button>Vous avez un projet?</button></HashLink>
         </div>
-        <img src={require('../img/pexels-pixabay-38544.jpg')} alt='' />
+        <img src={require('../img/pexels-pixabay-38544.jpg')} alt='' className='col-xs-12 col-sm-12 col-md-6 col-lg-6' />
       </div>
     </div>
     <Testimonials />

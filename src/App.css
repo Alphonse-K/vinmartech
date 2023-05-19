@@ -702,21 +702,20 @@ ul li .link:hover::before {
   background-color: rgba(217, 4, 41, .5);
 }
 
-.about .about-body .text {
-  position: absolute;
-  top: 0;
+.about .about-body .text p{
   text-align: justify;
   font-size: 1.5rem;
 }
 
 .about .about-body img {
   width: 50%;
-  height: 60vh;
+  height: 60%;
 }
 
 .about .about-body button {
-  width: 13rem;
-  height: 50px;
+  width: 15rem;
+  height: 4rem;
+  margin-top: 4rem;
   position: absolute;
   bottom: 0;
   border-style: none;
@@ -736,12 +735,10 @@ ul li .link:hover::before {
   border-radius: 10px;
 }
 
-
-
-/* .about .about-body div {
+.about .about-body div {
   padding-left: 2rem;
   padding-right: 2rem;
-} */
+}
 /**************************** ABOUT SECTION END ***************************************/
 
 /**************************** HOME COMPONENT END ***************************************/
@@ -907,6 +904,17 @@ ul li .link:hover::before {
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .about .about-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .about-body img {
+    width: 90%
   }
 }
 
