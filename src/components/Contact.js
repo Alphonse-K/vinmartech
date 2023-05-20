@@ -21,7 +21,7 @@ export default function Contact() {
           <p>Esse ullamco officia culpa officia aliqua sunt laboris ut quis deserunt nulla nostrud ipsum. Laboris veniam pariatur ea cupidatat culpa sint reprehenderit consectetur et excepteur ullamco.</p>
         </div>
         <div id='contact-quote' className='form'>
-          <div className='contact-form'>
+          <div className='contact-form col-xs-12 col-sm-12 col-md-6 col-lg-6'>
             <h6>Disponible 24/7 :</h6>
             <h1>À votre écoute:</h1>
             <form onSubmit={handleClick}>
@@ -31,7 +31,7 @@ export default function Contact() {
               <input type='submit' value='ENVOYEZ VOTRE MESSAGE' />
             </form>
           </div>
-          <div className='contact-address'>
+          <div className='contact-address col-xs-12 col-sm-12 col-md-6 col-lg-6'>
             <div className='contact-address-elem'>
               <div className='contact-icon-text'>
                 <FontAwesomeIcon icon={faLocationDot} 
