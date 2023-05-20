@@ -782,13 +782,13 @@ ul li .link:hover::before {
   padding: .6rem;
   margin-bottom: 3rem;
   outline: none;
-  border: rgb(217, 4, 41) solid 4px;
+  border: rgba(217, 4, 41, .5) solid 4px;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .form .contact-form input:focus {
-  border-color:rgba(217, 4, 41, .5);
+  border-color:rgb(217, 4, 41);
 }
 
 .form .contact-form textarea {
@@ -797,13 +797,13 @@ ul li .link:hover::before {
   min-height: 30vh;
   margin-bottom: 3rem;
   outline: none;
-  border: rgb(217, 4, 41) solid 4px;
+  border: rgba(217, 4, 41, .5) solid 4px;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.form .contact-form textarea.about {
-  border-color:rgba(217, 4, 41, .5);
+.form .contact-form textarea:focus {
+  border-color:rgb(217, 4, 41);
 }
 
 .form .contact-form input[type='submit'] {
