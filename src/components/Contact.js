@@ -8,13 +8,17 @@ import { faEnvelopeCircleCheck, faLocationDot, faPhoneVolume } from '@fortawesom
 
 export default function Contact() {
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [inputs, SetInputs] = useState('');
 
-  const handleClick = (e) => {
+  const handleChange = (e) => {
+    // const name = e.target.name;
+    // const value = e.target.value;
+    SetInputs((values) => ({...values, [name]: value}));
+  }
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-
+    console.table(inputs);
   }
 
   return (
@@ -29,10 +33,10 @@ export default function Contact() {
           <div className='contact-form col-xs-12 col-sm-12 col-md-6 col-lg-6'>
             <h6>Disponible 24/7 :</h6>
             <h1>À votre écoute:</h1>
-            <form onSubmit={handleClick}>
-              <input type='text' value='' placeholder='Nom/Prénom' onChange={handleClick}/><br />
-              <input type='email' value='' placeholder='Email' onChange={handleClick}/><br />
-              <textarea type='textarea' value='' placeholder='Votre message' onChange={handleClick}/><br />
+            <form onSubmit={handleSubmit}>
+              <input type='text' name='username' value={inputs.username} placeholder='Nom/Prénom' onChange={handleChange}/><br />
+              <input type='email' name='useremail' value={inputs.useremail} placeholder='Email' onChange={handleChange}/><br />
+              <textarea type='textarea' name='usermessage' value={inputs.usermessage} placeholder='Votre message' onChange={handleChange}/><br />
               <input type='submit' value='ENVOYEZ VOTRE MESSAGE' />
             </form>
           </div>
