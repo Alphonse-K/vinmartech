@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import BackToTop from './BackToTop';
@@ -8,8 +8,13 @@ import { faEnvelopeCircleCheck, faLocationDot, faPhoneVolume } from '@fortawesom
 
 export default function Contact() {
 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
   const handleClick = (e) => {
     e.preventDefault();
+
   }
 
   return (
