@@ -41,9 +41,9 @@ export default function Contact() {
                     paddingRight: '3rem',
                     }} 
                   />
-                <div>
+                <div className='text'>
                   <h3>Adresse de l'entreprise:</h3>
-                  <h5>Conakry, C/Ratoma - Lambanyi, Ctre Commercial</h5>
+                  <h5><i style={{color: 'grey'}}>Conakry, C/Ratoma - Lambanyi, Ctre Commercial</i></h5>
                 </div>
               </div>
             </div>
@@ -56,9 +56,9 @@ export default function Contact() {
                     paddingRight: '3rem',
                     }} 
                   />
-                <div>
+                <div className='text'>
                   <h3>Téléphone:</h3>
-                  <h5>+224 623 04 00 31</h5>
+                  <h5><i style={{color: 'grey'}}>+224 623 04 00 31</i></h5>
                 </div>
               </div>
             </div>
@@ -71,9 +71,9 @@ export default function Contact() {
                     paddingRight: '3rem',
                     }} 
                  />
-                <div>
+                <div className='text'>
                   <h3>Adresse E-mail:</h3>
-                  <h5>contact@Vinmartech.com</h5>
+                  <h5><i style={{color: 'grey'}}>contact@Vinmartech.com</i></h5>
                 </div>
               </div>
             </div>

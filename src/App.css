@@ -861,10 +861,14 @@ ul li .link:hover::before {
   }
 }
 
-@media (max-width: 410px) {
-  /* FontAwesomeIcon {
-    padding-right: 1rem;
-  } */
+@media (max-width: 405px) {
+  .contact-section .contact-address .contact-icon-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 /*********************** CONTACT COMPONENT END ***************************/
 
