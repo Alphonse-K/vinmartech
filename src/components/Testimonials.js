@@ -10,7 +10,7 @@ SwiperCore.use([Autoplay, EffectCoverflow, Pagination]);
 
 const slide_img = [
   {
-    name: "Clarence",
+    name: "Pinelo",
     image: require("../img/pinelo.jpg"),
     quote: "This is best and biggest unified platform for instant online admission. We can easily take admission for any course in any institute.."
   },

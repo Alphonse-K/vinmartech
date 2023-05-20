@@ -797,6 +797,28 @@ ul li .link:hover::before {
   font-weight: 700;
   border-radius: 20px;
 }
+
+.contact-section .contact-address {
+  border: rgba(217, 4, 41, .5) solid 1rem;
+  width: 50%;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+.contact-section .contact-address .contact-icon-text{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-address .contact-address-elem:nth-child(2) {
+  margin-top: 5rem;
+}
+
+.contact-address .contact-address-elem:nth-child(3) {
+  margin-top: 5rem;
+}
+
 /*********************** CONTACT COMPONENT END ***************************/
 
 

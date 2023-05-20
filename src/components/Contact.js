@@ -33,25 +33,49 @@ export default function Contact() {
           </div>
           <div className='contact-address'>
             <div className='contact-address-elem'>
-              <div>
-                <FontAwesomeIcon icon={faLocationDot} />
-                <h3>Adresse de l'entreprise:</h3>
+              <div className='contact-icon-text'>
+                <FontAwesomeIcon icon={faLocationDot} 
+                  style={{
+                    color: "rgb(217, 4, 41)", 
+                    fontSize: '3rem', 
+                    paddingRight: '3rem',
+                    }} 
+                  />
+                <div>
+                  <h3>Adresse de l'entreprise:</h3>
+                  <h5>Conakry, C/Ratoma - Lambanyi, Ctre Commercial</h5>
+                </div>
               </div>
-              <h5>Conakry, C/Ratoma - Lambanyi, Ctre Commercial</h5>
             </div>
             <div className='contact-address-elem'>
-              <div>
-                <FontAwesomeIcon icon={faPhoneVolume} style={{color: "#511f33",}} />
-                <h3>Téléphone:</h3>
+              <div className='contact-icon-text'>
+                <FontAwesomeIcon icon={faPhoneVolume} 
+                  style={{
+                    color: "rgb(217, 4, 41)", 
+                    fontSize: '3rem', 
+                    paddingRight: '3rem',
+                    }} 
+                  />
+                <div>
+                  <h3>Téléphone:</h3>
+                  <h5>+224 623 04 00 31</h5>
+                </div>
               </div>
-              <h5>+224 623 04 00 31</h5>
             </div>
             <div className='contact-address-elem'>
-              <div>
-                <FontAwesomeIcon icon={faEnvelopeCircleCheck} style={{color: "#511f26",}} />
-                <h3>Adresse E-mail:</h3>
+              <div className='contact-icon-text'>
+                <FontAwesomeIcon icon={faEnvelopeCircleCheck} 
+                  style={{
+                    color: "rgb(217, 4, 41)", 
+                    fontSize: '3rem', 
+                    paddingRight: '3rem',
+                    }} 
+                 />
+                <div>
+                  <h3>Adresse E-mail:</h3>
+                  <h5>contact@Vinmartech.com</h5>
+                </div>
               </div>
-              <h5>contact@Vinmartech.com</h5>
             </div>
           </div>
         </div>    
