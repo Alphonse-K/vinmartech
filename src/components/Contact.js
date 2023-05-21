@@ -8,12 +8,11 @@ import { faEnvelopeCircleCheck, faLocationDot, faPhoneVolume } from '@fortawesom
 
 export default function Contact() {
 
-  const [inputs, SetInputs] = useState('');
+  const [inputs, SetInputs] = useState('alphonse');
 
   const handleChange = (e) => {
-    // const name = e.target.name;
-    // const value = e.target.value;
-    SetInputs((values) => ({...values, [name]: value}));
+    const { name, value } = e.target;
+    SetInputs(values => ({...values, [name]: value}));
   }
 
   const handleSubmit = (e) => {
