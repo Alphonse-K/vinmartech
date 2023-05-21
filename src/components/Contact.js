@@ -6,13 +6,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeCircleCheck, faLocationDot, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 
 
+const initialValues = {
+    name: "",
+    email: "",
+    message: "",
+};
+
 export default function Contact() {
 
-  const [inputs, SetInputs] = useState('alphonse');
+  const [inputs, SetInputs] = useState(initialValues);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    SetInputs(values => ({...values, [name]: value}));
+    SetInputs({...inputs, [name]: value});
   }
 
   const handleSubmit = (e) => {
@@ -33,9 +39,9 @@ export default function Contact() {
             <h6>Disponible 24/7 :</h6>
             <h1>À votre écoute:</h1>
             <form onSubmit={handleSubmit}>
-              <input type='text' name='username' value={inputs.username} placeholder='Nom/Prénom' onChange={handleChange}/><br />
-              <input type='email' name='useremail' value={inputs.useremail} placeholder='Email' onChange={handleChange}/><br />
-              <textarea type='textarea' name='usermessage' value={inputs.usermessage} placeholder='Votre message' onChange={handleChange}/><br />
+              <input type='text' name='username' value={inputs.name} placeholder='Nom/Prénom' onChange={handleChange}/><br />
+              <input type='email' name='useremail' value={inputs.email} placeholder='Email' onChange={handleChange}/><br />
+              <textarea type='textarea' name='usermessage' value={inputs.message} placeholder='Votre message' onChange={handleChange}/><br />
               <input type='submit' value='ENVOYEZ VOTRE MESSAGE' />
             </form>
           </div>
@@ -88,7 +94,6 @@ export default function Contact() {
           </div>
         </div>    
       </div>
-      {/* </> */}
       <BackToTop />
       <Footer />
     </div>
