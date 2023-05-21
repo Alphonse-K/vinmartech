@@ -24,6 +24,11 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.table(inputs);
+    reset();
+  }
+
+  const reset = () => {
+      SetInputs(initialValues);
   }
 
   return (
@@ -39,9 +44,9 @@ export default function Contact() {
             <h6>Disponible 24/7 :</h6>
             <h1>À votre écoute:</h1>
             <form onSubmit={handleSubmit}>
-              <input type='text' name='username' value={inputs.name} placeholder='Nom/Prénom' onChange={handleChange}/><br />
-              <input type='email' name='useremail' value={inputs.email} placeholder='Email' onChange={handleChange}/><br />
-              <textarea type='textarea' name='usermessage' value={inputs.message} placeholder='Votre message' onChange={handleChange}/><br />
+              <input type='text' name='name' value={inputs.name} placeholder='Nom/Prénom' onChange={handleChange}/><br />
+              <input type='email' name='email' value={inputs.email} placeholder='Email' onChange={handleChange}/><br />
+              <textarea type='textarea' name='message' value={inputs.message} placeholder='Votre message' onChange={handleChange}/><br />
               <input type='submit' value='ENVOYEZ VOTRE MESSAGE' />
             </form>
           </div>
