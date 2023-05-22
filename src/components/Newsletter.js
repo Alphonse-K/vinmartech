@@ -3,26 +3,27 @@ import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-const initialValues = {
-  email: "",
-};
 
 export default function Newsletter() {
 
-    const [email, setEmail] = useState(initialValues);
+    const [email, setEmail] = useState('');
     const [agreement, setAgreement] = useState(false);
 
     const checkHandler = () => setAgreement(!agreement);
 
+    const handleInput = (e) => {
+        setEmail(e.target.value);
+    }
+
     const onSubmit = (event) => {
       event.preventDefault();
-      console.log("email: " + email, "value: " + agreement);
+      console.log("email: " + email, "agreement: " + agreement);
       reset();
     }
   
     const reset = () => {
       setAgreement(false);
-      setEmail(initialValues);
+      setEmail('');
    }
 
   return (
@@ -38,9 +39,9 @@ export default function Newsletter() {
                 id='news' 
                 type='email'
                 name='email' 
-                value={initialValues.email} 
+                value={email} 
                 placeholder='Votre adresse email' 
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={handleInput}
               />
               <button><FontAwesomeIcon icon={faPaperPlane} style={{color: "#ffff",}} onClick={onSubmit}/></button>
             </div>
