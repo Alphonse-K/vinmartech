@@ -3,18 +3,27 @@ import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
+const initialValues = {
+  email: "",
+};
 
 export default function Newsletter() {
 
-    const [email, setEmail] = useState("");
+    const [email, setEmail] = useState(initialValues);
     const [agreement, setAgreement] = useState(false);
+
+    const checkHandler = () => setAgreement(!agreement);
 
     const onSubmit = (event) => {
       event.preventDefault();
       console.log("email: " + email, "value: " + agreement);
+      reset();
     }
   
-    const checkHandler = () => setAgreement(!agreement);
+    const reset = () => {
+      setAgreement(false);
+      setEmail(initialValues);
+   }
 
   return (
       <div className='newsletter-container'>
@@ -24,7 +33,15 @@ export default function Newsletter() {
             <h6>Recevez votre newsletter directement dans votre boîte mail</h6>
             <label htmlFor="news" className='d-inline-block'>votre adresse email:</label>
             <div className='d-flex'>
-              <input className='email-input col-xs-12 col-sm-8 col-md-6 col-lg-6' id='news' type='email' placeholder='Votre adresse email' onChange={(e) => setEmail(e.target.value)}/>
+              <input 
+                className='email-input col-xs-12 col-sm-8 col-md-6 col-lg-6' 
+                id='news' 
+                type='email'
+                name='email' 
+                value={initialValues.email} 
+                placeholder='Votre adresse email' 
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <button><FontAwesomeIcon icon={faPaperPlane} style={{color: "#ffff",}} onClick={onSubmit}/></button>
             </div>
             <div className='checkbox d-flex' >
