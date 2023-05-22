@@ -13,6 +13,7 @@ import ServicesItem from './ServicesItem';
 import Newsletter from './Newsletter';
 import Testimonials from './Testimonials';
 import { HashLink } from 'react-router-hash-link';
+import { Helmet } from 'react-helmet';
 
 export default function Home() {
 
@@ -81,7 +82,9 @@ export default function Home() {
 
   return (
     <div>
-        {/* <div></div> */}
+      <Helmet>
+        <title>Vinmartech | Bienvue chez nous!</title>
+      </Helmet>
       <Navbar />
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {data1.map((slide, i) => {

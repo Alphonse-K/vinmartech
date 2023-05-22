@@ -4,12 +4,15 @@ import Footer from './Footer';
 import BackToTop from './BackToTop';
 import { Bounce, Slide } from 'react-awesome-reveal';
 import { HashLink } from 'react-router-hash-link';
+import { Helmet } from 'react-helmet';
 
 
 export default function Expertises() {
   return (
-    // <></>
     <div id='expertises'>
+      <Helmet>
+        <title>Vinmartech | Parcourez nos différentes Prestations.</title>
+      </Helmet>
         <Navbar/>
         <div className='expertise-header'>
           <img src={require('../img/desktop.jpg')} alt='' />
