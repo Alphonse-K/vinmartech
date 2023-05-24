@@ -13,7 +13,7 @@ import ServicesItem from './ServicesItem';
 import Newsletter from './Newsletter';
 import Testimonials from './Testimonials';
 import { HashLink } from 'react-router-hash-link';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
 

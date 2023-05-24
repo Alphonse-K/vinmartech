@@ -10,6 +10,7 @@ import NoPage from './components/NoPage';
 import Home from './components/Home';
 import Expertises from './components/Expertises';
 import Spinner from './components/Spinner';
+import { HelmetProvider } from 'react-helmet-async';
 
 
 
@@ -25,22 +26,22 @@ function App() {
   }, []);
 
   return (
-    <>
-    {
-      loading 
-      ? <Spinner />
-      :
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="expertises" element={<Expertises />} />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
-      </BrowserRouter>
-    }
-    </>
+    <HelmetProvider>
+      {
+        loading 
+        ? <Spinner />
+        :
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="expertises" element={<Expertises />} />
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </BrowserRouter>
+      }
+    </HelmetProvider>
   );
 }
 

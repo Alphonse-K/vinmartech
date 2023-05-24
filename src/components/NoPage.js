@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Flip } from 'react-awesome-reveal'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async';
 
 export default function NoPage() {
   return (

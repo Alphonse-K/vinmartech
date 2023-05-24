@@ -4,7 +4,7 @@ import Footer from './Footer';
 import BackToTop from './BackToTop';
 import { Bounce, Slide } from 'react-awesome-reveal';
 import { HashLink } from 'react-router-hash-link';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 
 export default function Expertises() {
